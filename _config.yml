@@ -1,0 +1,26 @@
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            'Peter Haddad'
+tagline:          'A Personal Site'
+description:      'A small Personal Site'
+url:              'peterhdd.github.io'
+baseurl:                  "/"
+
+author:
+  name:           'Peter Haddad'
+  paginate:         5
+  twitter:    'peter_haddad3'
+  stackoverflow: '7015400'
+  github: 'peterHdd'
+  email: 'peterhd3412@gmail.com'
+ 
+# Custom vars
+version:          3.8.3
+
+
+plugins: [jekyll-paginate]
+
+github:
+  repo:           https://github.com/PeterHdd/peterhdd.github.io
