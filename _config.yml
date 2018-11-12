@@ -8,7 +8,7 @@ description:      'A small Personal Site'
 url:              'peterhdd.github.io'
 baseurl:                  "/"
 
-  author:
+author:
   name:           'Peter Haddad'
   paginate:         5
   twitter:    'peter_haddad3'
