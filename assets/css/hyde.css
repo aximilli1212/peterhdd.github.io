@@ -589,3 +589,11 @@ a.pagination-item:hover {
  display: block;
  padding: 16px;
 }
+
+.credit{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+  margin-bottom: 5em;
+}
