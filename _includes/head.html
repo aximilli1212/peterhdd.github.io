@@ -72,8 +72,8 @@
   {% else %}
   <meta name="twitter:description" content="{{ site.description }}" />
   <meta prefix="og: http://ogp.me/ns#" property="og:description" content="{{ site.description }}"/>
-
-  {% endif %} {% if page.image %}
+  {% endif %}
+  {% if page.image %}
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="{{ site.url }}{{ page.image }}" />
   {% else %}
