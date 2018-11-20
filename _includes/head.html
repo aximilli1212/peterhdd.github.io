@@ -1,54 +1,88 @@
 <head>
-  <link href="http://gmpg.org/xfn/11" rel="profile">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-  <!-- Enable responsiveness on mobile devices-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <!-- Enable responsiveness on mobile devices -->
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1"
+  />
 
   <title>
-    {% if page.title == "Home" %}
-      {{ site.title }} | {{ site.tagline }}
-    {% else %}
-      {{ page.title }} | {{ site.title }}
-    {% endif %}
+    {% if page.title == "Home" %} {{ site.title }} | {{ site.tagline }} {% else
+    %} {{ page.title }} | {{ site.title }} {% endif %}
   </title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="{{ "assets/css/poole.css" | relative_url }}">
-  <link rel="stylesheet" href="{{ "assets/css/syntax.css" | relative_url }}">
-  <link rel="stylesheet" href="{{ "assets/css/hyde.css" | relative_url }}">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/brands.css" integrity="sha384-nT8r1Kzllf71iZl81CdFzObMsaLOhqBU1JD2+XoAALbdtWaXDOlWOZTR4v1ktjPE" crossorigin="anonymous">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css" integrity="sha384-HbmWTHay9psM8qyzEKPc8odH4DsOuzdejtnr+OFtDmOcIVnhgReQ4GZBH7uwcjf6" crossorigin="anonymous">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/solid.css" integrity="sha384-wnAC7ln+XN0UKdcPvJvtqIH3jOjs9pnKnq9qX68ImXvOGz2JuFoEiCjT8jyZQX2z" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{
+    "assets/css/poole.css" | relative_url
+  }}"> <link rel="stylesheet" href="{{
+    "assets/css/syntax.css" | relative_url
+  }}"> <link rel="stylesheet" href="{{
+    "assets/css/hyde.css" | relative_url
+  }}">
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.2.0/css/brands.css"
+    integrity="sha384-nT8r1Kzllf71iZl81CdFzObMsaLOhqBU1JD2+XoAALbdtWaXDOlWOZTR4v1ktjPE"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css"
+    integrity="sha384-HbmWTHay9psM8qyzEKPc8odH4DsOuzdejtnr+OFtDmOcIVnhgReQ4GZBH7uwcjf6"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.2.0/css/solid.css"
+    integrity="sha384-wnAC7ln+XN0UKdcPvJvtqIH3jOjs9pnKnq9qX68ImXvOGz2JuFoEiCjT8jyZQX2z"
+    crossorigin="anonymous"
+  />
 
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+  <link
+    rel="stylesheet"
+    href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface"
+  />
 
   <!-- Icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ "images/icons/profile.jpg" | relative_url }}">
-                                 <link rel="shortcut icon" href="{{ "images/icons/profile.jpg" | relative_url }}">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{
+    "images/icons/profile.jpg" | relative_url
+  }}"> <link rel="shortcut icon" href="{{
+    "images/icons/profile.jpg" | relative_url
+  }}">
 
   <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
-  
-  <!--Twitter cards -->
-  <meta name="twitter:site"    content="@{{ site.twitter }}">
-  <meta name="twitter:title"   content="{{ page.title }}">
+  <link
+    rel="alternate"
+    type="application/rss+xml"
+    title="RSS"
+    href="/atom.xml"
+  />
+
+  <!-- Twitter cards -->
+  <meta name="twitter:site" content="@{{ site.twitter }}" />
+  <meta name="twitter:title" content="{{ page.title }}" />
   {% if page.description %}
-  <meta name="twitter:description" content="{{ page.description }}">
+  <meta name="twitter:description" content="{{ page.description }}" />
   {% else %}
-  <meta name="twitter:description" content="{{ site.description }}">
-  {% endif %}
-  
-  {% if page.image %}
-  <meta name="twitter:card"  content="summary_large_image">
-  <meta name="twitter:image" content="{{ site.url }}{{ page.image }}">
+  <meta name="twitter:description" content="{{ site.description }}" />
+  {% endif %} {% if page.image %}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="{{ site.url }}{{ page.image }}" />
   {% else %}
-  <meta name="twitter:card"  content="summary">
-  <meta name="twitter:image" content="{{ site.url }}/images/aboutimage.jpg">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="{{ site.url }}/images/aboutimage.jpg" />
   {% endif %}
   <!-- end of Twitter cards -->
   <!-- analytics -->
   {% include analytics.html %}
-   <!-- end of analytics -->
+  <!-- end of analytics -->
+  <!-- LinkedIn card -->
+  <meta prefix="og: http://ogp.me/ns#" property="og:title" content="{{ page.title }}" />
+  <meta prefix="og: http://ogp.me/ns#" property="og:image" content="{{ site.url }}/images/aboutimage.jpg" />
+  <meta prefix="og: http://ogp.me/ns#" property="og:description" content="{{ site.description }}"/>
+  <meta prefix="og: http://ogp.me/ns#" property="og:url" content="{{ page.url }}" />
+  <!-- end of LinkedIn card -->
 </head>
