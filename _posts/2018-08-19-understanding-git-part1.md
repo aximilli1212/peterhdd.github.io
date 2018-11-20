@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Understanding Git Part 1
 ---
 
@@ -24,9 +25,10 @@ First you need to navigate to the location where you want to create a new reposi
 
 #### Git Bash:
 
-    cd Desktop/gitExample
-    git init
-
+```bash
+cd Desktop/gitExample
+git init
+```
 #### Git GUI:
 
 ![git gui new repo](/images/gitguinewrepo.PNG)
@@ -38,10 +40,10 @@ This will create a new hidden file called `.git` inside the folder `gitExample`,
 First create a file inside the folder `newfile.txt` and write some text inside of it. Then you need to add this file to the staging area, to be able to commit it later on. You can also use `git status` that will inform you in which branch you currently reside in and if you have any untracked files.
 
 #### Git Bash:
-
-    git add newfile.txt #tracks the file and adds it to the staging area
-    git commit -m "initial commit" #adds tracked files to repo
- 
+```bash
+git add newfile.txt #tracks the file and adds it to the staging area
+git commit -m "initial commit" #adds tracked files to repo
+```
    
 
 
@@ -60,10 +62,10 @@ After you commit the files, you are now ready to push them! You need to push the
 But, first you need to add the remote repository. Remote refers to any repository that is not in your local machine. Example, if you want to use Github you need to first create an account there and then create a repository to be able to push and pull. After adding a remote, you will be able to push the file to the repository.
 
 #### Git Bash
-
-    git remote add origin https://github.com/<userName>/<repoName>.git 
-    git push -u origin master
-
+```bash
+git remote add origin https://github.com/<userName>/<repoName>.git 
+git push -u origin master
+```
 **Note**: `origin` is an alias to the URL of the remote repository, which means you do not have to write the url everytime you want to do a pull or push operation. Also `master` is your local branch.
 
 If you execute `git branch -a` then you will get the following output:
@@ -84,8 +86,9 @@ Here you need to click on *Push* and then add the remote url in the *Arbitrary L
 Now if any changes were added to the file in the remote repository, then you need to pull first and then push your local changes to the repository. `git pull` does a `git fetch` followed by a `git merge`.
 
 #### Git Bash
-  
-    git pull origin master
+ ```bash 
+git pull origin master
+```
 
 #### Git GUI
 
@@ -100,8 +103,9 @@ Here you need to first add the  remote url after clicking *Remote/Add*, then cli
 If there is a repository in github, then you want to use locally in your computer then you need to clone it(copy).
 
 #### Git Bash
-
-    git clone https://github.com/<userName>/<repositoryName>
+ ```bash 
+git clone https://github.com/<userName>/<repositoryName>
+```
 
 Now if you execute `git branch -a`, you will get the following output:
 

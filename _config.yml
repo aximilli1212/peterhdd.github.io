@@ -5,8 +5,9 @@ permalink:        pretty
 title:            'Peter Haddad'
 tagline:          'A Personal Site'
 description:      'A small Personal Site'
-url:              'peterhdd.github.io'
+url:              'petercoding.com'
 baseurl:                  "/"
+ads: ca-pub-8689548599050263
 
 author:
   name:           'Peter Haddad'
@@ -24,3 +25,4 @@ plugins: [jekyll-paginate]
 
 github:
   repo:           https://github.com/PeterHdd/peterhdd.github.io
+analytics: UA-129540552-1
