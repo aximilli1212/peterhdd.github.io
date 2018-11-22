@@ -26,5 +26,3 @@ plugins: [jekyll-paginate]
 github:
   repo:           https://github.com/PeterHdd/peterhdd.github.io
 analytics: UA-129540552-1
-
-theme: jekyll-theme-cayman
