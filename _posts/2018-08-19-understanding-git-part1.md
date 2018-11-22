@@ -73,7 +73,7 @@ If you execute `git branch -a` then you will get the following output:
     master
     remotes/origin/master
 
-`remotes/origin/master` is a remote tracking branch which is located inside `.gif/refs`. Its purpose is to keep track of the current state of a remote branch, `git status` will also give you information about the remote tracking branch.
+`remotes/origin/master` is a remote tracking branch which is located inside `.git/refs`. Its purpose is to keep track of the current state of a remote branch, `git status` will also give you information about the remote tracking branch.
 
 #### Git GUI
 
