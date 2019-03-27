@@ -1,18 +1,13 @@
-<!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
-     styles, `#sidebar-checkbox` for behavior. -->
-     <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
-
-     <!-- Toggleable sidebar -->
-     <div class="sidebar" id="sidebar">
-
-  <div class="container">
+<div class="sidebar">
+  <div class="container sidebar-sticky">
     <div class="sidebar-about">
-      <h1>
-        <a href="{{ "/" | relative_url }}">
+      <h2>
+        <a href="{{ site.baseurl }}">
           {{ site.title }}
         </a>
-      </h1>
+      </h2>
       <p class="lead">{{ site.description }}</p>
+    </div>
 
     <nav class="sidebar-nav">
       <a class="sidebar-nav-item{% if page.url == "/" %} active{% endif %}" href="{{ "/" | relative_url }}">Home</a>
@@ -34,10 +29,8 @@
       
       
     </nav>
-    <br>
     {% include stackOverFlowFlair.html %}
     {% include social.html %}
     <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
   </div>
-</div>
 </div>
