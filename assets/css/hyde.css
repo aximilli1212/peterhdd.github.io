@@ -286,7 +286,8 @@ a.sidebar-nav-item:focus {
     display:table;
    
   }
-  .social{
+  .social
+  {
     list-style-type: none;
     text-align: center;
     margin-right: auto;
