@@ -12,10 +12,6 @@
     content="width=device-width, initial-scale=1.0, maximum-scale=1"
   />
 
-  <title>
-    {% if page.title == "Home" %} {{ site.title }} | {{ site.tagline }} {% else
-    %} {{ page.title }} | {{ site.title }} {% endif %}
-  </title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="{{
@@ -85,5 +81,6 @@
   <meta prefix="og: http://ogp.me/ns#" property="og:image" content="{{ site.url }}/images/aboutimage.jpg" />
 
   {% endif %}
+  {% seo %}
   <!-- end of Twitter cards -->
 </head>

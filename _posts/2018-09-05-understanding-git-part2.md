@@ -2,6 +2,7 @@
 layout: post
 comments: true
 title: Understanding Git Part 2
+description: Git includes many commands that can help in the daily life of a programmer. Example, git config that enables you to add your username and email, or git --help to be able to access the help page.
 ---
 
 <p class="message"> 

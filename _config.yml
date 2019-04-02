@@ -2,7 +2,7 @@
 permalink:        pretty
 
 # Setup
-title:            'Peter Haddad'
+title:            'Peter Coding'
 tagline:          'A Personal Site'
 description:      'Tech Explained'
 url:              'https://petercoding.com'
@@ -16,12 +16,21 @@ author:
   stackoverflow: '7015400'
   github: 'peterHdd'
   email: 'peterhd3412@gmail.com'
+
+social:
+  name: Peter Haddad
+  links:
+    - https://twitter.com/peter_haddad3
+    - https://github.com/peterHdd
+    - https://stackoverflow.com/users/7015400
  
 # Custom vars
 version:          3.8.3
 
 
-plugins: [jekyll-paginate]
+plugins:  
+    - jekyll-seo-tag
+    - jekyll-sitemap
 
 github:
   repo:           https://github.com/PeterHdd/peterhdd.github.io

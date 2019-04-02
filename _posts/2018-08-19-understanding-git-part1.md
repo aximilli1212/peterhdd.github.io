@@ -2,6 +2,7 @@
 layout: post
 comments: true
 title: Understanding Git Part 1
+description: Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. Git can be used to track old versions of files and to check all the different changes.
 ---
 
 <p class="message"> 
