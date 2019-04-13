@@ -12,7 +12,7 @@ Extra information about Git, that may help you in your daily life.
 ## Extras
 
 | Command       | Description         | 
-| :------------- |-------------| 
+| :-------------: |-------------| 
 | `git branch nameOfBranch`    | creates another branch | 
 | `git checkout nameOfBranch`    | switches to the other branch     | 
 | `git branch` | returns the current branch you are in   |
