@@ -3,6 +3,7 @@
   {% include analytics.html %}
   <!-- end of analytics -->
     <!-- ads -->
+      {% if page.layout == 'post' %}
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
   (adsbygoogle = window.adsbygoogle || []).push({
@@ -10,6 +11,7 @@
     enable_page_level_ads: true
   });
 </script>
+    {% endif %}
     <!-- end of ads -->
   <link href="http://gmpg.org/xfn/11" rel="profile" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
