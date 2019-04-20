@@ -4,7 +4,7 @@ title: About
 ---
 
 
-
+  {% include shareIcons.html %}
 Peter is an enthusiast programmer, he lives in Lebanon, enjoys learning new languages and helping other developers in their problems. 
 
 He earned his bachelor's degree in computer science in 2018. Currently he is working as an ERP implementer at OSolutions.

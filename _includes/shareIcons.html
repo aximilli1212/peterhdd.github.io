@@ -1,0 +1,7 @@
+<!-- The social media icon bar -->
+<div class="icon-bar">
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}&title={{ page.title}}" class="facebook" target="_blank"><i class="fab fa-facebook"></i></a> 
+    <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ site.baseurl }}{{ page.url }}&text={{ page.title}}" class="twitter" target="_blank"><i class="fab fa-twitter"></i></a> 
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&title={{ page.title}}" class="linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.reddit.com/submit?url={{ site.url }}{{ site.baseurl }}{{ page.url }}&title={{ page.title}}" class="reddit" target="_blank"><i class="fab fa-reddit"></i></a> 
+  </div>
