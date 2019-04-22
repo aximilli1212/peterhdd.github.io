@@ -177,3 +177,12 @@ After running the project locally, you should get:
 
 <img src="/images/reactiveFormTutorial.png" width="400">
 
+## Recommended Books
+---
+<span>
+<a target="_blank"  href="https://www.amazon.com/gp/product/1484237749/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1484237749&linkCode=as2&tag=petercoding20-20&linkId=415617cdb28711347870172f34662e0f"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=1484237749&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=petercoding20-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=petercoding20-20&l=am2&o=1&a=1484237749" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;"/>
+</span>
+<span>
+<a target="_blank"  href="https://www.amazon.com/gp/product/1548991996/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1548991996&linkCode=as2&tag=petercoding20-20&linkId=a346e9d7d9d730f3c8da1c95511ffce7"><img class="imgDisplay" border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=1548991996&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=petercoding20-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=petercoding20-20&l=am2&o=1&a=1548991996" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;"/>
+</span>
+

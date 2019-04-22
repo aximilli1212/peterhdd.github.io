@@ -47,3 +47,8 @@ Extra information about Git, that may help you in your daily life.
 3. Do a pull request (compares branches), the repository owner will accept the changes if they are correct and merges.
 
 ![graph](/images/graph.png)
+
+## Recommended Books
+----
+<a target="_blank"  href="https://www.amazon.com/gp/product/1449316387/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1449316387&linkCode=as2&tag=petercoding20-20&linkId=5d4eb43bdc65f7de3cb7e2ebd23cef35"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=1449316387&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=petercoding20-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=petercoding20-20&l=am2&o=1&a=1449316387" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+<a target="_blank"  href="https://www.amazon.com/gp/product/1787120724/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1787120724&linkCode=as2&tag=petercoding20-20&linkId=e1665f184e040ea7f94abf630a2c3926"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=1787120724&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=petercoding20-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=petercoding20-20&l=am2&o=1&a=1787120724" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
