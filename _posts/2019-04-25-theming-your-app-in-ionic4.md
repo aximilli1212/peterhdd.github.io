@@ -4,6 +4,7 @@ comments: true
 title: Theming your App In Ionic 4
 description: Ionic 4 is mostly used as a UI framework, it can be easily customized and changed according to the requirements.
 ad: <a href="https://click.linksynergy.com/fs-bin/click?id=TozhwfAkrFw&offerid=467035.495&subid=0&type=4"><IMG border="0"   alt="Introduction to TensorFlow for AI, ML, and DL." src="https://ad.linksynergy.com/fs-bin/show?id=TozhwfAkrFw&bids=467035.495&subid=0&type=4&gridnum=16"></a>
+ids: 4
 ---
 
 <p class="message"> 
@@ -171,6 +172,7 @@ ion-alert
 }
 
 ```
+**Note:** You can override the default ionic variables in the following `scss` file `src/theme/variables.scss`.
 
 The css variable `--background` will change the background color of the alert. After changing the background color, you probably want to also change the text color in the alert. Since, there is no [custom css property](https://ionicframework.com/docs/api/alert#css-custom-properties) that changes the text color for `ion-alert`. Then you need to open the dev tools and inspect the text.
 
