@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: Theming your App In Ionic 4
-description: Ionic 4 is mostly used as a UI framework, it can be easily customized and changed according to the requirements.
+description: Ionic 4 is mostly used as a UI framework, it can be customized according to the requirements. In this ionic tutorial, we will learn how to style your app.
 ad: <a href="https://click.linksynergy.com/fs-bin/click?id=TozhwfAkrFw&offerid=467035.495&subid=0&type=4"><IMG border="0"   alt="Introduction to TensorFlow for AI, ML, and DL." src="https://ad.linksynergy.com/fs-bin/show?id=TozhwfAkrFw&bids=467035.495&subid=0&type=4&gridnum=16"></a>
 ids: 4
 ---
@@ -188,3 +188,19 @@ After inspecting you will get the following:
 Both the alert title and subtitle will have the color black, to be able to change the color, you need to take the css variable which is `--ion-text-color` and add it in your `scss` file so you can override the color. You would then get the following alert:
 
 <img src="/images/alert.png" alt="Alert">
+
+## Ionic Icon
+---
+
+Ionic also offers some icons that can be used in web, IOS, android and desktop apps. To check the list of icons, go to the following page [ionicons](https://ionicons.com/).
+
+Ionicons contains a different version for IOS and android.
+
+**Example of using ionicons:**
+
+```html
+<ion-icon name="add"></ion-icon>
+```
+You can also specify a style for the icons, example you can use `name="ios-add"`, thus it will use the IOS version.
+
+*I hope you enjoyed reading this ionic tutorial, please feel free to leave any comments or feedback on this post!*

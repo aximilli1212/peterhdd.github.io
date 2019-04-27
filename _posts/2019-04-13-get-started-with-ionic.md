@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: Get Started with Ionic
-description: Ionic is a framework, that helps you to create hybrid applications thus you will have only one codebase for both IOS and Android. The latest version of ionic is ionic 4.
+description: Ionic is a framework, that helps you to create hybrid applications, the latest version of ionic is ionic 4. In this ionic tutorial we will build a simple login app.
 ad: <iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=12&l=ur1&category=software&banner=0BSSVHTA3XB4Y210FD82&f=ifr&linkID=fd41d430ec3b71cc5b75d15f7227d096&t=petercoding20-20&tracking_id=petercoding20-20" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
 ids: 3
 ---
@@ -19,7 +19,7 @@ Ionic utilizes the command line, to be able to install it you need to open the t
 
     npm install -g ionic cordova
 
-**Note**: This will install both ionic and the cordova CLI. You also need to install node before being able to execute this command. You can find information about node in the following link [node install](https://www.npmjs.com/get-npm).
+**Note**: This will install both ionic framework and the cordova CLI. You also need to install node before being able to execute this command. You can find information about node in the following link [node install](https://www.npmjs.com/get-npm).
 
 After that you can execute the following command to start a project:
 
@@ -188,3 +188,4 @@ After running the project locally, you should get:
 <a target="_blank"  href="https://www.amazon.com/gp/product/1548991996/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1548991996&linkCode=as2&tag=petercoding20-20&linkId=a346e9d7d9d730f3c8da1c95511ffce7"><img class="imgDisplay" border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=1548991996&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=petercoding20-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=petercoding20-20&l=am2&o=1&a=1548991996" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;"/>
 </span>
 
+*I hope you enjoyed reading this ionic tutorial, please feel free to leave any comments or feedback on this post!*
