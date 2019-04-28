@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: Get Started with Git
+title: Understanding Git Part 1
 description: In this git tutorial, i will compare cli with git gui and explain git, after that you will be able to understand git. Also check understanding git part 2.
 ad: <iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=12&l=ur1&category=software&banner=0BSSVHTA3XB4Y210FD82&f=ifr&linkID=fd41d430ec3b71cc5b75d15f7227d096&t=petercoding20-20&tracking_id=petercoding20-20" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
 ids: 1
