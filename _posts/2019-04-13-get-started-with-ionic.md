@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: Get Started with Ionic
-description: Ionic is a framework, that helps you to create hybrid applications, the latest version of ionic is ionic 4. In this ionic tutorial we will build a simple login app.
+description: Ionic helps you to create hybrid applications, the latest version of ionic is ionic 4. In this get started with ionic tutorial we will build a simple page.
 ad: <iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=12&l=ur1&category=software&banner=0BSSVHTA3XB4Y210FD82&f=ifr&linkID=fd41d430ec3b71cc5b75d15f7227d096&t=petercoding20-20&tracking_id=petercoding20-20" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
 ids: 3
 ---
