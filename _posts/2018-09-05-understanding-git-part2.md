@@ -11,7 +11,7 @@ ids: 2
 Extra information about Git, that may help you in your daily life.
 </p>
 
-## Extras
+## List Of Git Commands:
 
 | Command       | Description         | 
 | :-------------: |-------------| 
