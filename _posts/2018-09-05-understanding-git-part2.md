@@ -31,6 +31,8 @@ Extra information about Git, that may help you in your daily life.
 | `git diff` | It shows the difference between the index(staging area) and the working directory after you edit |
 | `git rebase` | Rewinds the commits on your current branch, pulls in the commits from the other branch, and reapplies the rewinded commits back on top.[git rebase](https://jeffkreeftmeijer.com/git-rebase/) |
 
+## Extra Information:
+---
 * `.gitignore` tells git which files (or patterns) it should ignore, it's usually used to avoid committing transient files from your working directory that aren't useful to other collaborators, such as compilation products, temporary files IDEs create, etc.
 
 * `FETCH_HEAD` is a short-lived ref, to keep track of what has just been fetched from the remote repository.
