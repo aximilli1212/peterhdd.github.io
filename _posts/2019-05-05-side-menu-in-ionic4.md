@@ -142,3 +142,5 @@ Example, in the `home.page.html`:
 After adding the above code, you should get the following side menu:
 
 <img src="/images/sideMenu.png" alt="sideMenu" width="400">
+
+*I hope you enjoyed reading this ionic tutorial, please feel free to leave any comments or feedback on this post!*
