@@ -5,7 +5,6 @@ title: Implementing Reorder In Ionic 4
 description: In this ionic 4 tutorial, I will give an example on how to use the reorder component which allows you to drag an item to change the order of the list.
 ad: <iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=21&l=ur1&category=software&banner=1V4A7TA0GRTFAGEXJ002&f=ifr&linkID=4da9da0fc8ce3eef7763093e0629cc3f&t=petercoding20-20&tracking_id=petercoding20-20" width="125" height="125" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
 ids: 6
-date: 2019-05-05 00:30:00
 image: /images/reorderList.png
 ---
 
@@ -97,6 +96,7 @@ detail:
 First, we use the `splice()` method to remove the dragged item from the array, and assign it to the variable `itemMove`. Then, we add the item at the position of `event.detail.to`.
 
 After that we can call the method `complete()` in order to complete the reorder operation.
+
 
 ## Code
 ----
