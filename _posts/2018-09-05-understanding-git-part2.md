@@ -5,6 +5,7 @@ title: Understanding Git Part 2 (Git Commands)
 description: In this git tutorial, I will explain about the different git commands. Also for people that use git gui don't forget to check understanding git part 1.
 ad: <a href="https://click.linksynergy.com/fs-bin/click?id=TozhwfAkrFw&offerid=467035.498&subid=0&type=4"><IMG border="0"   alt="Coursera" src="https://ad.linksynergy.com/fs-bin/show?id=TozhwfAkrFw&bids=467035.498&subid=0&type=4&gridnum=16"></a>
 ids: 2
+category : Git
 ---
 
 <p class="message"> 

@@ -6,6 +6,7 @@ description: In this ionic 4 tutorial, i will give an example on how to create a
 ad: <iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=21&l=ur1&category=software&banner=040CAFM9HWSCJ6A03YR2&f=ifr&linkID=a82670a1ca42d744e42ff45f303343e3&t=petercoding20-20&tracking_id=petercoding20-20" width="125" height="125" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
 ids: 5
 image: /images/sideMenu.png
+category: Ionic
 ---
 
 <p class="message"> 

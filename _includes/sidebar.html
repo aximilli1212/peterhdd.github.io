@@ -16,6 +16,7 @@
         The code below dynamically generates a sidebar nav of pages with
         `layout: page` in the front-matter. See readme for usage.
       {% endcomment %}
+      <a class="sidebar-nav-item{% if page.url == "/category/" %} active{% endif %}" href="{{ "/category/" | relative_url }}">Categories</a>
 
       {% assign pages_list = site.pages %}
       {% for node in pages_list %} 

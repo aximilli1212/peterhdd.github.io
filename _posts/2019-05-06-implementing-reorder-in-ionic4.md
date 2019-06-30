@@ -6,6 +6,7 @@ description: In this ionic 4 tutorial, I will give an example on how to use the 
 ad: <iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=21&l=ur1&category=software&banner=1V4A7TA0GRTFAGEXJ002&f=ifr&linkID=4da9da0fc8ce3eef7763093e0629cc3f&t=petercoding20-20&tracking_id=petercoding20-20" width="125" height="125" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
 ids: 6
 image: /images/reorderList.png
+category: Ionic
 ---
 
 <p class="message"> 

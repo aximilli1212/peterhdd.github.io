@@ -4,24 +4,33 @@ title: Learn App Development
 description: Learn how to build your own apps using android & java or hybrid frameworks like ionic 4 and check out the tutorials that will get you a software developer job.
 ---
 
+
 <div class="posts">
   {% for post in site.posts %}
+
   <div class="post">
-    <h2 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h2>
-
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-
-    {{ post.excerpt }}
-    {% include shareIcons.html %}
+    <!-- <h2 class="post-title"> -->
+        <div class="card bg-light">
+            <div class="card-body">
+              <h2 class="card-title post-title">
+                  <a href="{{ post.url }}">
+                      {{ post.title }}
+                    </a>
+              </h2>
+      <span class="card-subtitle mb-2 text-primary">{{ post.date | date_to_string }}</span>
+      <p class="card-text">
+      {{ post.excerpt }}
+    </p>
+    </div>
+  </div>
+    <!-- </h2> -->
+    
   </div>
   {% endfor %}
 </div>
 
-<div class="pagination">
+{% include shareIcons.html %}
+<div class="paginations">
   {% if paginator.next_page %}
     <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
   {% else %}

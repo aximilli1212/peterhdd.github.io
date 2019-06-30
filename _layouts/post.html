@@ -5,7 +5,7 @@ layout: default
 <div class="post">
   {{page.ad}}
   <h2 class="post-title">{{ page.title }}</h2>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
+  <span class="post-date text-primary">{{ page.date | date_to_string }}</span>
   {{ content }}
   {% include comments.html %}
   {% include shareIcons.html %}

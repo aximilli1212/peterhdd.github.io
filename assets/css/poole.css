@@ -60,6 +60,7 @@ html {
 
 body {
   color: #515151;
+  /* background-color: #f7f7f7; */
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
@@ -274,7 +275,7 @@ tbody tr:nth-child(odd) th {
 .message {
   margin-bottom: 1rem;
   padding: 1rem;
-  color: #717171;
+  color: #888a8c;
   background-color: #f9f9f9;
 }
 
@@ -385,7 +386,7 @@ tbody tr:nth-child(odd) th {
  * there are no more previous or next posts to show.
  */
 
-.pagination {
+.paginations {
   overflow: hidden; /* clearfix */
   margin-left: -1rem;
   margin-right: -1rem;
