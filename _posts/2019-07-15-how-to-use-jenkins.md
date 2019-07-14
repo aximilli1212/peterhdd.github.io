@@ -102,4 +102,4 @@ This field follows the syntax of cron (with minor differences). Specifically, ea
 - MONTH	    The month (1–12)
 DOW	The day of the week (0–7) where 0 and 7 are Sunday.
 
-*I hope you enjoyed reading this git tutorial, please feel free to leave any comments or feedback on this post!*
+*I hope you enjoyed reading this jenkins tutorial, please feel free to leave any comments or feedback on this post!*
