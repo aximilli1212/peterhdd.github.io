@@ -64,7 +64,7 @@ Then click on *Please create a new jobs to get started*, enter a name for the pr
 
 After that, navigate to the *Source Code Management* and click on *Git* to add your repository to Jenkins.
 
-<img src="/images/gitjenkins.png" alt="adding gradle project">
+<img src="/images/gitJenkins.png" alt="adding gradle project">
 
 ## Building the Project
 ---
