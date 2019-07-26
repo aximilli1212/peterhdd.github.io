@@ -4,7 +4,10 @@
   {% include head.html %}
 
   <body>
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    {% include sidebar.html %}
+    
+    <div class="content container">
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- square ads -->
 <ins class="adsbygoogle"
      style="display:block"
@@ -15,10 +18,8 @@
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-    {% include sidebar.html %}
-    
-    <div class="content container">
       {{ content }}
+
     </div>
   </body>
 </html>
