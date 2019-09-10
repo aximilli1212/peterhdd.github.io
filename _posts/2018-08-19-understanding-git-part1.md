@@ -5,7 +5,7 @@ title: Understanding Git Part 1
 description: In this git tutorial, i will compare cli with git gui and explain git, after that you will be able to understand git. Also check understanding git part 2.
 ad: <iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=12&l=ur1&category=software&banner=0BSSVHTA3XB4Y210FD82&f=ifr&linkID=fd41d430ec3b71cc5b75d15f7227d096&t=petercoding20-20&tracking_id=petercoding20-20" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
 ids: 1
-category: Git
+categories: Git
 ---
 
 <p class="message"> 
@@ -35,7 +35,7 @@ git init
 ```
 #### Git GUI:
 
-![git gui new repo](/images/gitguinewrepo.PNG)
+![git gui new repo](/assets/images/gitguinewrepo.PNG)
 
 This will create a new hidden file called `.git` inside the folder `gitExample`, thus making it a local repository with a branch called `master`.
 
@@ -55,7 +55,7 @@ If you did a mistake you can execute `git reset newfile.txt` and it will remove 
 
 #### Git GUI:
 
-![add a new file](/images/gitaddfile.PNG)
+![add a new file](/assets/images/gitaddfile.PNG)
 
 Here you need to click on *Stage Changed* which will add the files to the stage area and then write a message and click *Commit*.
 
@@ -81,7 +81,7 @@ If you execute `git branch -a` then you will get the following output:
 
 #### Git GUI
 
-![git push](/images/gitpush.PNG)
+![git push](/assets/images/gitpush.PNG)
 
 Here you need to click on *Push* and then add the remote url in the *Arbitrary Location*.
 
@@ -96,7 +96,7 @@ git pull origin master
 
 #### Git GUI
 
-![git merge](/images/gitmerge.PNG)
+![git merge](/assets/images/gitmerge.PNG)
 
 Here you need to first add the  remote url after clicking *Remote/Add*, then click *Fetch From* and *Merge*. Also refer to this answer [pull in git gui](https://stackoverflow.com/questions/22666828/no-pull-in-git-gui).
 
@@ -121,7 +121,7 @@ Now if you execute `git branch -a`, you will get the following output:
 
 #### Git GUI
 
-![git clone](/images/gitclone.PNG)
+![git clone](/assets/images/gitclone.PNG)
 
 To clone a repository, simply click on *Clone new repository*, the Source location field should contain the remote url and the target directory should contain a folder.
 

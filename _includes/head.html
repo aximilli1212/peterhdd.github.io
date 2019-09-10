@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <!-- analytics -->
   {% include analytics.html %}
@@ -14,22 +16,18 @@
   <link href="http://gmpg.org/xfn/11" rel="profile" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-
   <!-- Enable responsiveness on mobile devices -->
   <meta
     name="viewport"
     content="width=device-width, initial-scale=1.0, maximum-scale=1"
   />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="{{
-    "assets/css/poole.css" | relative_url
-  }}"> <link rel="stylesheet" href="{{
-    "assets/css/syntax.css" | relative_url
-  }}"> <link rel="stylesheet" href="{{
-    "assets/css/hyde.css" | relative_url
-  }}">
+  <script src="{{ site.url }}/assets/js/jquery.min.js"></script>
+  <script src="{{ site.url }}/assets/js/bootstrap.min.js"></script>
+  <link href="{{ site.url }}/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="{{ site.url }}/assets/css/main.css" rel="stylesheet" type="text/css">
+
   <link
     rel="stylesheet"
     href="https://use.fontawesome.com/releases/v5.2.0/css/brands.css"
@@ -56,9 +54,9 @@
 
   <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{
-    "images/icons/profile.jpg" | relative_url
+    "assets/images/icons/profile.jpg" | relative_url
   }}"> <link rel="shortcut icon" href="{{
-    "images/icons/profile.jpg" | relative_url
+    "assets/images/icons/profile.jpg" | relative_url
   }}">
 
   <!-- RSS -->
@@ -93,3 +91,32 @@
   {% seo %}
   <!-- end of Twitter cards -->
 </head>
+<body>
+ 
+  <div class="container-fluid">
+      <div class="row-fluid">
+          <div class="navbar navbar-custom navbar-fixed-top" role="navigation">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="{{ site.url }}/">{{ site.name }}</a>
+              </div>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                      {% assign trans = site.data.values[site.lan] %}
+                      
+                      <li class="active"><a href="{{ site.url }}/">{{ trans.home }}</a></li>
+                      <li class="active"><a href="{{ site.url }}/archive">{{ trans.archive }}</a></li>
+                      <li class="active"><a href="{{ site.url }}/categories">{{ trans.categories }}</a></li>
+                      <li class="active"><a href="{{ site.url }}/amazon-affiliate-disclaimer">{{ trans.amazon-affiliate-disclaimer }}</a></li>
+                      <li class="active"><a href="{{ site.url }}/about">{{ trans.about }}</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div> 
+  

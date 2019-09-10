@@ -5,7 +5,7 @@ title: Implementing Reorder In Ionic 4
 description: In this ionic 4 tutorial, I will give an example on how to use the reorder component which allows you to drag an item to change the order of the list.
 ad: <iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=21&l=ur1&category=software&banner=1V4A7TA0GRTFAGEXJ002&f=ifr&linkID=4da9da0fc8ce3eef7763093e0629cc3f&t=petercoding20-20&tracking_id=petercoding20-20" width="125" height="125" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
 ids: 6
-image: /images/reorderList.png
+image: /assets/images/reorderList.png
 category: Ionic
 ---
 
@@ -70,7 +70,7 @@ The attribute `slot` of `ion-reorder` will specify where the reorder icon should
 
 After implementing the above, we will get the following:
 
-<img src="/images/reorderList.png" alt="reorder" width="400">
+<img src="/assets/images/reorderList.png" alt="reorder" width="400">
 
 Now, inside the method `reorderItems($event)`, we can add the following code:
 
@@ -178,7 +178,7 @@ export class HomePage {
   </ion-content>
 ```
 
-<img src="/images/gif/reorderList.gif" alt="reorder list">
+<img src="/assets/images/gif/reorderList.gif" alt="reorder list">
 
 
 *I hope you enjoyed reading this ionic tutorial about reorder, please feel free to leave any comments or feedback on this post!*

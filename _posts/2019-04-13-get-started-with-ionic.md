@@ -30,7 +30,7 @@ Then the project will be created and you can navigate to the folder using `cd` a
 
 You will get the following in the browser:
 
-<img src="/images/ionicStart.png" width="400">
+<img src="/assets/images/ionicStart.png" width="400">
 
 **Note**: `blank` is a template that the ionic team created so we can use it in our projects. There are two other options like `tabs` and `sidemenu`.
 
@@ -39,19 +39,39 @@ You will get the following in the browser:
 
 The following tables contains the most used commands in ionic projects:
 
- |Command    | Description         | 
-| :--------------------:|-------------| 
-| `ionic start <Project_Name> <template>`| Creates a new project according to the template | 
-| `ionic serve`    | Starts a local server to view the application| 
-| `ionic generate` | Enables you to generate pages, services, modules, directive|
-| `ionic info` | Gives you information regarding the versions of ionic, cordova cli, node, os |
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Command</th>
+      <th scope="col">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+      <td class="text-danger">ionic start Project_Name template</td>
+      <td>Creates a new project according to the template</td>
+    </tr>
+     <tr>
+      <td class="text-danger">ionic serve</td>
+<td>Starts a local server to view the application</td>
+    </tr>
+         <tr>
+      <td class="text-danger">ionic generate</td>
+<td>Enables you to generate pages, services, modules, directive</td>
+    </tr>
+            <tr>
+      <td class="text-danger">ionic info</td>
+<td>Gives you information regarding the versions of ionic, cordova cli, node, os</td>
+    </tr>
+    </tbody>
+    </table>
 
 ## Project Structure
 ---
 
 In this section, I will explain the different folders that will be avaiable after creating a project. Please note that I'am using ionic 4 with angular. The following is the project structure that will be created:
 
-<img src="/images/ionicStructure.png" width="400">
+<img src="/assets/images/ionicStructure.png" width="400">
 
 * <span style='color:red'>_node_modules_</span>
 , will contain all the npm packages in this project
@@ -178,7 +198,7 @@ You can find the github repository of the project in the following link:
 
 After running the project locally, you should get:
 
-<img src="/images/reactiveFormTutorial.png" width="400">
+<img src="/assets/images/reactiveFormTutorial.png" width="400">
 
 ## Recommended Books
 ---

@@ -14,23 +14,76 @@ Extra information about Git, that may help you in your daily life.
 
 ## List Of Git Commands:
 
-| Command       | Description         | 
-| :-------------: |-------------| 
-| `git branch nameOfBranch`    | creates another branch | 
-| `git checkout nameOfBranch`    | switches to the other branch     | 
-| `git branch` | returns the current branch you are in   |
-| `git checkout master` | switches to master branch |
-| `git merge nameOfBranch`   | merges the changes from a branch to master | 
-| `git branch -d nameOfBranch`    | delete the branch     | 
-| `git push` | pushes all the changes to github   |
-| `git --help` | help page |
-| `git help config` | help about config command   |
-| `git config --global user.name "Name"` | configure git, it adds your name and email to the config file|
-| `git show HEAD` | to see the most recent commit |
-| `git remote update` | Brings remote ref up to date |
-| `git status -uno` | Tells you if the branch you are tracking is ahead, behind or has diverged |
-| `git diff` | It shows the difference between the index(staging area) and the working directory after you edit |
-| `git rebase` | Rewinds the commits on your current branch, pulls in the commits from the other branch, and reapplies the rewinded commits back on top.[git rebase](https://jeffkreeftmeijer.com/git-rebase/) |
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Command</th>
+      <th scope="col">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+      <td class="text-danger">git branch nameOfBranch</td>
+      <td>creates another branch </td>
+    </tr>
+      <tr>
+      <td class="text-danger">git checkout nameOfBranch</td>
+      <td>switches to the other branch </td>
+    </tr>
+          <tr>
+      <td class="text-danger">git branch</td>
+      <td>returns the current branch you are in </td>
+    </tr>
+    <tr>
+      <td class="text-danger">git checkout master</td>
+      <td>switches to master branch</td>
+    </tr>
+        <tr>
+      <td class="text-danger">git merge nameOfBranch</td>
+      <td>merges the changes from a branch to master</td>
+    </tr>
+            <tr>
+      <td class="text-danger">git branch -d nameOfBranch</td>
+      <td>delete the branch</td>
+    </tr>
+                <tr>
+      <td class="text-danger">git push</td>
+      <td>pushes all the changes to github</td>
+    </tr>
+                    <tr>
+      <td class="text-danger">git --help</td>
+      <td>help page</td>
+    </tr>
+                        <tr>
+      <td class="text-danger">git help config</td>
+      <td>help about config command</td>
+    </tr>
+       <tr>
+      <td class="text-danger">git config --global user.name "Name"</td>
+      <td>configure git, it adds your name and email to the config file</td>
+    </tr>
+           <tr>
+      <td class="text-danger">git show HEAD</td>
+      <td>to see the most recent commit</td>
+    </tr>
+               <tr>
+      <td class="text-danger">git remote update</td>
+      <td>brings remote ref up to date</td>
+    </tr>
+                   <tr>
+      <td class="text-danger">git status -uno</td>
+      <td>tells you if the branch you are tracking is ahead, behind or has diverged</td>
+    </tr>
+        <tr>
+      <td class="text-danger">git diff</td>
+      <td>It shows the difference between the index(staging area) and the working directory after you edit</td>
+    </tr>
+            <tr>
+      <td class="text-danger">git rebase</td>
+      <td>Rewinds the commits on your current branch, pulls in the commits from the other branch, and reapplies the rewinded commits back on top.[git rebase](https://jeffkreeftmeijer.com/git-rebase/)</td>
+    </tr>
+  </tbody>
+  </table>
 
 ## Extra Information:
 ---
@@ -51,7 +104,7 @@ Extra information about Git, that may help you in your daily life.
 2. Do some changes
 3. Do a pull request (compares branches), the repository owner will accept the changes if they are correct and merges.
 
-![graph](/images/graph.png)
+![graph](/assets/images/graph.png)
 
 ## Recommended Books
 ----

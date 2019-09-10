@@ -2,7 +2,8 @@
 permalink:        pretty
 
 # Setup
-title:            'PeterCoding'
+name : Peter Coding
+title:            'Peter Coding'
 tagline:          'A Personal Site'
 description:      'Tech Explained'
 url:              'https://petercoding.com'
@@ -31,6 +32,7 @@ version:          3.8.3
 plugins:  
     - jekyll-seo-tag
     - jekyll-sitemap
+    - jekyll-paginate
 
 github:
   repo:           https://github.com/PeterHdd/peterhdd.github.io
@@ -47,3 +49,17 @@ defaults:
       type: category
     values:
       layout: "category"
+
+## default date_format
+date_format: 
+  title: "%B-%-d-%Y"
+  archive: "%b"
+  categories: "%b-%Y"
+  tag: "%b-%Y"
+# Language
+lan: "en" 
+
+paginate: 10
+
+highlighter: rouge
+markdown: kramdown

@@ -1,4 +1,4 @@
-<div class="sidebar">
+<!-- <div class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
       <h2>
@@ -36,4 +36,36 @@
     <a class="sidebar-nav-item{% if page.url == "/amazon-affiliate-disclaimer/" %} active{% endif %}" href="{{ "/amazon-affiliate-disclaimer/" | relative_url }}">Amazon Affiliate Disclaimer</a>
 
   </div>
+</div> -->
+
+{% assign trans = site.data.values[site.lan] %}
+<div class="sidebar well">
+    <header class="sidebar-header" role="banner">
+        <a href="{{ site.url }}/">
+            <img src="{{ site.url }}/assets/images/profilepic.jpeg" class="img-circle" />
+        </a>
+        <!--
+        <h3 class="title">
+        <a href="{{ site.BASE_PATH }}/">{{ site.title }}</a>
+        </h3>
+        -->
+    </header>
+    <div class="text-center">
+        {{ site.description }}
+    </div>
 </div>
+
+<div class="sidebar well">
+    {% include links-list.html %}
+</div>
+
+
+<div class="sidebar well">
+    <h1>{{ trans.recent_posts }}</h1>
+    <ul>
+        {% for post in site.posts limit:5 %}
+          <li><a href="{{ site.url}}{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+    </ul>
+</div>
+

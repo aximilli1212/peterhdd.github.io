@@ -4,8 +4,8 @@ comments: true
 title: How To Use Jenkins?
 description: In this tutorial, I will explain what is Jenkins and use a gradle project in Jenkins as an example.
 ids: 7
-image: /images/jenkinslogo.png
-category: Miscellaneous
+image: /assets/images/jenkinslogo.png
+category: DevOps
 ---
 
 <p class="message"> 
@@ -29,7 +29,7 @@ Continuous Delivery is when the software is automatically built, tested and read
 
 An image illustrating both CI and CD:
 
-<img src="/images/cicd.png" alt="graph of CI and CD">
+<img src="/assets/images/cicd.png" alt="graph of CI and CD">
 <cite>Image from [Atlassian](https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment)</cite>
 
 ### Installing And Configuring Jenkins
@@ -39,17 +39,17 @@ First you need to download Jenkins, to be able to download it navigate to the pa
 
 After downloading it, it will run on http://localhost:8080/, and you will get the following screen:
 
-<img src="/images/jenkinslock.png" alt="Jenkins first screen">
+<img src="/assets/images/jenkinslock.png" alt="Jenkins first screen">
 
 Then navigate to the link and retrieve the password to be able to unlock Jenkins. Aftering unlocking Jenkins, you need to click on *Install suggested Plugins* and Jenkins will automatically install plugins like Ant, Gradle, Git, Subversion, etc...
 
 Then you need to create an admin user by filling the following fields:
 
-<img src="/images/adminjenkins.png" alt="Jenkins admin creation">
+<img src="/assets/images/adminjenkins.png" alt="Jenkins admin creation">
 
 After adding information for admin user, you will reach the home page of Jenkins:
 
-<img src="/images/jenkinshomepage.png" alt="home page jenkins">
+<img src="/assets/images/jenkinshomepage.png" alt="home page jenkins">
 
 Now you have a Jenkins server running but with no project, in the next section we will add a gradle project to Jenkins.
 
@@ -60,11 +60,11 @@ First, you need to install the git plugin and the gradle plugin to be able to us
 
 Then click on *Please create a new jobs to get started*, enter a name for the project, choose freestyle project and press *OK*.
 
-<img src="/images/jenkinsgradle.png" alt="new item">
+<img src="/assets/images/jenkinsgradle.png" alt="new item">
 
 After that, navigate to the *Source Code Management* and click on *Git* to add your repository to Jenkins.
 
-<img src="/images/gitJenkins.png" alt="adding gradle project">
+<img src="/assets/images/gitJenkins.png" alt="adding gradle project">
 
 ## Building the Project
 ---
@@ -73,18 +73,18 @@ To be able to build the project in gradle, we need to configure the build steps.
 
 Then choose the radio button *Gradle wrapper* so we can use the gradle version used in this project, and inside the task field write *build* so we can invoke the *build* gradle task.
 
-<img src="/images/gradlebuild.png" alt="gradle build steps">
+<img src="/assets/images/gradlebuild.png" alt="gradle build steps">
 
 Now we can build the project by clicking on the **Build Now** button on the left side menu. We can then check the console output to see the logs:
 
-<img src="/images/consoleoutput.png" alt="console output">
+<img src="/assets/images/consoleoutput.png" alt="console output">
 
 ## Build Trigger
 ---
 
 Build trigger will let you start a job that can be automatically done once a specified event occurs, example scheduling a job that gets triggers when there are changes in the repository.
 
-<img src="/images/buildtrigger.png" alt="build trigger">
+<img src="/assets/images/buildtrigger.png" alt="build trigger">
 
 So, to be able to build according to changes in the repository you can use the *Poll SCM* option that will check the repository for changes and automatically build a new version. For example we can specify that we can Jenkins to check for changes in the repository every 15 minutes by adding the following to the *schedule* field:
 

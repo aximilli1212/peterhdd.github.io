@@ -1,0 +1,288 @@
+html {
+  height:100%;
+}
+
+body {
+  padding-top: 60px;
+  height:100%;
+}
+
+.wrap {
+  position:relative;
+  min-height:100%;
+}
+
+.footer {
+  text-align: center;
+  color: $footer-color;
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+  min-height:40px;
+  background-color:$footer-background-color;
+}
+
+.footer a {
+  /* color: #aaa; */
+  color: $footer-a-color;
+}
+
+.footer a:hover {
+  color: $footer-a-hover-color;
+}
+
+.footer p {
+  margin-top:10px;
+}
+
+/* side bar */
+.sidebar {
+  // color: $side-bar-color;
+  background-color: #eeeeee;
+  font-size: 1.1em;
+  padding: 10px !important;
+}
+
+.sidebar h1 {
+  font-size: 1.3em;
+}
+
+.sidebar a {
+  color: black;
+}
+
+.sidebar li {
+  margin-top: .7em;
+  line-height: 1em;
+}
+
+.sidebar a:hover {
+  color: $side-bar-a-hover-color;
+}
+
+/* Xixia logo */
+.sidebar-header {
+text-align: center;
+margin-bottom: 10px;
+}
+
+.container-left {
+  margin: 0;
+  padding-bottom:60px;
+}
+
+/* post style */
+.article {
+  font-size: 17px;
+  color: $article-color;
+}
+
+.article img {
+  max-width:100%;
+}
+
+/* set the link style */
+.article a {
+color: $article-a-color;
+}
+
+.article a:hover {
+color: $article-a-hover-color;
+}
+
+.icon-style {
+  font-size: 13px;
+}
+
+.post-date {
+text-transform: uppercase;
+font-size: 14px;
+letter-spacing: 3px;
+}
+
+/* 
+  custom bootstrap navbar
+  reference from: https://stackoverflow.com/questions/18529274/change-navbar-color-in-twitter-bootstrap-3 
+*/
+.navbar-custom {
+  background-color: $nav-bar-background-color;
+  color: $nav-bar-color;
+  border-radius:0;
+}
+
+.navbar-custom .navbar-nav > li > a {
+  color: $nav-bar-color;
+}
+
+.navbar-custom .navbar-nav > .active > a {
+  color: $nav-bar-color;
+  background-color:transparent;
+}
+
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus,
+.navbar-custom .navbar-nav > .open >a {
+  text-decoration: none;
+  background-color: $nav-bar-open-a-background-color;
+}
+
+.navbar-custom .navbar-brand {
+  color: $nav-bar-brand-color;
+}
+
+.navbar-custom .navbar-brand:hover {
+  color: $nav-bar-brand-hover-color;
+}
+
+.navbar-custom .navbar-toggle {
+  background-color:#eeeeee;
+}
+.navbar-custom .icon-bar {
+  background-color: $nav-bar-icon-bar;
+}
+
+/*
+* Social list
+*
+*
+*
+*/
+.social li{
+  float: left;
+}
+
+.social{
+ list-style-type: none;
+ overflow: hidden;
+ padding : 0;
+ margin-left: 20px !important;
+}
+
+.social li a{
+  text-align: center;
+ padding: 10px;
+}
+
+  .center-stack
+  {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display:table;
+   
+  }
+  .social
+  {
+    list-style-type: none;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    display:table;
+    overflow: hidden;
+   }
+
+  //  .shared-bar a {
+  //     display: block;
+  //     text-align: center;
+  //     padding: 16px;
+  //     transition: all 0.3s ease;
+  //     color: white;
+  //     font-size: 20px;
+  //   }
+  
+  //    .shared-bar {
+  //   position: fixed;
+  //   top: 50%;
+  //   -webkit-transform: translateY(-50%);
+  //   -ms-transform: translateY(-50%);
+  //   transform: translateY(-50%);
+  //   right:0;
+  // } 
+  @media screen and (min-width: 800px) {
+    .shared-bar a {
+      display: block;
+      text-align: center;
+      padding: 16px;
+      transition: all 0.3s ease;
+      color: white;
+      font-size: 20px;
+    }
+  
+     .shared-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right:0;
+  } 
+  }
+  .facebook {
+      background: #3B5998;
+      color: white;
+    }
+    
+    .twitter {
+      background: #55ACEE;
+      color: white;
+    }
+    
+    .linkedin {
+      background: #007bb5;
+      color: white;
+    }
+    
+    .reddit {
+      background: #bb0000;
+      color: white;
+    } 
+
+    .reading:hover {
+      border-bottom: none !important;
+      text-decoration: none;
+    }
+
+    .reading{
+      color: #008aa2 !important;
+    }
+
+    @media only screen and (max-width: 800px) {
+      .center-stack
+      {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        display:table;
+       
+      }
+      .social
+      {
+        list-style-type: none;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        display:table;
+        overflow: hidden;
+       }
+    
+       .shared-bar {
+        bottom: 0;
+        display: flex;
+        left: 0;
+        right: 0;
+        top: auto;
+        width: 100%;
+        position: fixed;
+      }
+      .shared-bar a {
+        text-align: center;
+        padding: 8px 8px;
+        width: 100%;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 20px;
+      }
+    }

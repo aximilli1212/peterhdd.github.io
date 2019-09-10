@@ -19,7 +19,7 @@ Ionic 4 uses Shadow DOM which is a web component standard. It allows you to sepe
 
 An Example of shadow Dom:
 
-<img src="/images/shadowdom.png" alt="Shadow dom ionic 4">
+<img src="/assets/images/shadowdom.png" alt="Shadow dom ionic 4">
 
 The above screenshot is represents an `<ion-item>` with attribute `lines = "none"`.
 
@@ -70,7 +70,7 @@ The last `scss` file is the `variables.scss` which is under the theme folder. It
 
 Ionic 4 offers 9 different colors which are all declared inside the `variables.scss` file. The following image illustrates the different colors:
 
-<img src="/images/colors.png" alt="ionic colors">
+<img src="/assets/images/colors.png" alt="ionic colors">
 
 **The html**:
 
@@ -188,7 +188,7 @@ After inspecting you will get the following:
 
 Both the alert title and subtitle will have the color black, to be able to change the color, you need to take the css variable which is `--ion-text-color` and add it in your `scss` file so you can override the color. You would then get the following alert:
 
-<img src="/images/alert.png" alt="Alert">
+<img src="/assets/images/alert.png" alt="Alert">
 
 ## Ionic Icon
 ---
