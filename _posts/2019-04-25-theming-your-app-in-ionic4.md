@@ -65,6 +65,18 @@ Then in the `home.page.html`, you can apply that style to a component:
 ```
 The last `scss` file is the `variables.scss` which is under the theme folder. It contains different custom colors to change the style of your application, more on that in the next section.
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- inside posts -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8689548599050263"
+     data-ad-slot="2590272657"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ## Colors
 ----
 

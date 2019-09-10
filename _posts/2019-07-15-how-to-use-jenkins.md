@@ -53,6 +53,18 @@ After adding information for admin user, you will reach the home page of Jenkins
 
 Now you have a Jenkins server running but with no project, in the next section we will add a gradle project to Jenkins.
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- inside posts -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8689548599050263"
+     data-ad-slot="2590272657"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ## Adding a Gradle Project
 ----
 

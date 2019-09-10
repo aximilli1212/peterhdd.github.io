@@ -79,6 +79,18 @@ In this section, I will explain the different folders that will be avaiable afte
 * <span style='color:red'>_tslint.json_</span>, will contain different rules that will enable it to check if the typescript code is readable.
 * <span style='color:red'>_src_</span>, is the most important folder, it will contain all the pages and code of the project.
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- inside posts -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8689548599050263"
+     data-ad-slot="2590272657"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ### Explaining the src Folder Structure
 
 Inside the `src` folder, you will find the `app` folder which will contain the different pages that were generated using the command `ionic generate page <Page_Name>`. Each page will have 4 files, the `home.module.ts` which will contain the `@NgModule decorator` that will let you import other modules, declare components to be used in the page or add services and plugins inside the `providers` array. For example

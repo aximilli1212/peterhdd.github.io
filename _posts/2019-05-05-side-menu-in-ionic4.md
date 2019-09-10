@@ -112,6 +112,19 @@ Example:
   <ion-router-outlet id="content1"></ion-router-outlet>
 </ion-app>
 ```
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- inside posts -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8689548599050263"
+     data-ad-slot="2590272657"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 Explanation:
 
 The `ion-menu` with `side="start"` will create a side menu that starts from left to right, `ion-title` will create a title for the pages in the side menu. Also, don't forget to add the attribute `contentId` which the id the menu should use. The `routerLink` will let you navigate to the url specified, and the `routerDirection` Determines the animation that takes place when the page changes. 
