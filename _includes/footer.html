@@ -1,5 +1,6 @@
 {% assign trans = site.data.values[site.lan] %}
 <div class="footer">
+        <span class="active"><a href="{{ site.url }}/privacy-policy">{{ trans.amazon-affiliate-disclaimer }}</a></span>
     <p>&copy;{{ site.time | date: '%Y' }} {{ site.name }}{{ trans.thanks }}
             {% for thank in site.data.thanks %}
                 <a href="{{ thank.url }}">
@@ -12,6 +13,23 @@
             {% endfor %}
     </p>
 </div>
-
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#efefef",
+      "text": "#404040"
+    },
+    "button": {
+      "background": "#8ec760",
+      "text": "#ffffff"
+    }
+  },
+  "content": {
+    "href": "https://petercoding.com/privacy-policy/"
+  }
+});
+</script>
 </body>
 </html>

@@ -5,6 +5,7 @@
         <div class="row">
             <div class="col-md-3 hidden-xs">
                 {% include sidebar.html %}
+                {% if page.noad != 1 %}
                 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                 <!-- vertical ad -->
                 <ins class="adsbygoogle"
@@ -16,6 +17,7 @@
                 <script>
                      (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
+                {% endif %}
             </div>
             <div class="col-md-9">
                 {{ content }}
