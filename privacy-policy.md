@@ -38,7 +38,7 @@ Articles on this site may include embedded content (e.g. videos, images, article
 These websites may collect data about you, use cookies, embed additional third-party tracking, and monitor your interaction with that embedded content, including tracing your interaction with the embedded content if you have an account and are logged in to that website.
 
 ## Analytics
-This website uses Google Analytics, a web analytics service provided by Google, Inc. (“Google”). Google Analytics uses “cookies”, which are text files placed on your computer, to help the website analyze how users use the site. Here you can find further information about this service: [https://developers.google.com/analytics/resources/concepts/gaConceptsTrackingOverview#howAnalyticsGetsData](https://developers.google.com/analytics/resources/concepts/gaConceptsTrackingOverview#howAnalyticsGetsData).
+This website uses Google Analytics, a web analytics service provided by Google, Inc. (“Google”). Google Analytics uses “cookies”, which are text files placed on your computer, to help the website analyze how users use the site. Here you can find further information about this service: [How analytics collects the data](https://developers.google.com/analytics/resources/concepts/gaConceptsTrackingOverview#howAnalyticsGetsData).
 
 You may refuse the use of cookies by selecting the appropriate settings on your browser. However, please note that if you do this, you may not be able to use the full functionality of this website. Furthermore you can prevent Google’s collection and use of data (cookies and IP address) by downloading and installing the browser plug-in available under [https://tools.google.com/dlpage/gaoptout?hl=en-GB](https://tools.google.com/dlpage/gaoptout?hl=en-GB).
 
@@ -67,5 +67,4 @@ If you have an account on this site, or have left comments, you can request to r
 Visitor comments may be checked through an automated spam detection service handled by Disqus.
 
 ## Contact information
-
 If you have any question, [get in touch](http://petercoding.com/about/).
