@@ -114,7 +114,7 @@ Extra information about Git, that may help you in your daily life.
 2. Do some changes
 3. Do a pull request (compares branches), the repository owner will accept the changes if they are correct and merges.
 
-![graph](/assets/images/graph.png)
+![graph](/assets/images/graph.jpg)
 
 ## Recommended Books
 ----

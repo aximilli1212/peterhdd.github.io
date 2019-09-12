@@ -30,7 +30,9 @@ Then the project will be created and you can navigate to the folder using `cd` a
 
 You will get the following in the browser:
 
-<img src="/assets/images/ionicStart.png" width="400">
+<img class="lazy-loading" data-sizes="auto" src="/assets/images/ionicStart.jpg" width="400" data-src="/assets/images/ionicStart.jpg" alt="reorder list" data-srcset="/assets/images/ionicStart.jpg 300w,
+    /assets/images/ionicStart.jpg 600w,
+    /assets/images/ionicStart.jpg 900w">
 
 **Note**: `blank` is a template that the ionic team created so we can use it in our projects. There are two other options like `tabs` and `sidemenu`.
 
@@ -71,7 +73,7 @@ The following tables contains the most used commands in ionic projects:
 
 In this section, I will explain the different folders that will be avaiable after creating a project. Please note that I'am using ionic 4 with angular. The following is the project structure that will be created:
 
-<img src="/assets/images/ionicStructure.png" width="400">
+<img src="/assets/images/ionicStructure.jpg" width="400">
 
 * <span style='color:red'>_node_modules_</span>
 , will contain all the npm packages in this project
@@ -210,7 +212,9 @@ You can find the github repository of the project in the following link:
 
 After running the project locally, you should get:
 
-<img src="/assets/images/reactiveFormTutorial.png" width="400">
+<img class="lazy-loading" data-sizes="auto" src="/assets/images/reactiveFormTutorial.jpg" width="400" data-src="/assets/images/reactiveFormTutorial.jpg" alt="reorder list" data-srcset="//assets/images/reactiveFormTutorial.jpg 300w,
+    /assets/images/reactiveFormTutorial.jpg 600w,
+    /assets/images/reactiveFormTutorial.jpg 900w">
 
 ## Recommended Books
 ---

@@ -5,7 +5,7 @@ title: Implementing Reorder In Ionic 4
 description: In this ionic 4 tutorial, I will give an example on how to use the reorder component which allows you to drag an item to change the order of the list.
 ad: <iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=21&l=ur1&category=software&banner=1V4A7TA0GRTFAGEXJ002&f=ifr&linkID=4da9da0fc8ce3eef7763093e0629cc3f&t=petercoding20-20&tracking_id=petercoding20-20" width="125" height="125" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
 ids: 6
-image: /assets/images/reorderList.png
+image: /assets/images/reorderList.jpg
 category: Ionic
 ---
 
@@ -82,9 +82,9 @@ The attribute `slot` of `ion-reorder` will specify where the reorder icon should
 
 After implementing the above, we will get the following:
 
-<img data-src="/assets/images/reorderList.png" data-sizes="auto" src="/assets/images/reorderList.png" alt="reorder" width="400" class="lazy-loading" data-srcset="/assets/images/reorderList.png 300w,
-    /assets/images/reorderList.png 600w,
-    /assets/images/reorderList.png 900w">
+<img data-src="/assets/images/reorderList.jpg" data-sizes="auto" src="/assets/images/reorderList.jpg" alt="reorder" width="400" class="lazy-loading" data-srcset="/assets/images/reorderList.jpg 300w,
+    /assets/images/reorderList.jpg 600w,
+    /assets/images/reorderList.jpg 900w">
 
 Now, inside the method `reorderItems($event)`, we can add the following code:
 
