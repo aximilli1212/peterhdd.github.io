@@ -82,7 +82,9 @@ The attribute `slot` of `ion-reorder` will specify where the reorder icon should
 
 After implementing the above, we will get the following:
 
-<img src="/assets/images/reorderList.png" alt="reorder" width="400">
+<img data-src="/assets/images/reorderList.png" data-sizes="auto" src="/assets/images/reorderList.png" alt="reorder" width="400" class="lazy-loading" data-srcset="/assets/images/reorderList.png 300w,
+    /assets/images/reorderList.png 600w,
+    /assets/images/reorderList.png 900w">
 
 Now, inside the method `reorderItems($event)`, we can add the following code:
 
@@ -190,7 +192,9 @@ export class HomePage {
   </ion-content>
 ```
 
-<img src="/assets/images/gif/reorderList.gif" alt="reorder list">
+<img src="/assets/images/gif/reorderList.gif" data-sizes="auto" data-src="/assets/images/gif/reorderList.gif" alt="reorder list" class="lazy-loading" data-srcset="/assets/images/gif/reorderList.gif 300w,
+    /assets/images/gif/reorderList.gif 600w,
+    /assets/images/gif/reorderList.gif 900w">
 
 
 *I hope you enjoyed reading this ionic tutorial about reorder, please feel free to leave any comments or feedback on this post!*
