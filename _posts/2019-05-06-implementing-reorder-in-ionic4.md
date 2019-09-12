@@ -65,7 +65,7 @@ Example:
 `ionItemReorder` is an event used with component `ion-reorder-group`, which will enable us to complete the reordering of the items. The attribute `disabled` will show the reorder icon if it is set to `false`.
 
 The `ngFor` directive will loop inside the array `animals` and display them in a list.
-
+<br>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- inside posts -->
 <ins class="adsbygoogle"
@@ -77,7 +77,7 @@ The `ngFor` directive will loop inside the array `animals` and display them in a
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-
+<br>
 The attribute `slot` of `ion-reorder` will specify where the reorder icon should be added, in this example it is added at the end of the item.
 
 After implementing the above, we will get the following:
