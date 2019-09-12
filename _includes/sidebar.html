@@ -42,7 +42,9 @@
 <div class="sidebar well">
     <header class="sidebar-header" role="banner">
         <a href="{{ site.url }}/">
-            <img src="{{ site.url }}/assets/images/profilepic.jpeg" class="img-circle" />
+            <img data-srcset="{{ site.url }}/assets/images/profilepic.jpeg 300w,
+            {{ site.url }}/assets/images/profilepic.jpeg 600w,
+            {{ site.url }}/assets/images/profilepic.jpeg 900w" data-sizes="auto" src="{{ site.url }}/assets/images/profilepic.jpeg" data-src="{{ site.url }}/assets/images/profilepic.jpeg" class="lazy-loading img-circle" />
         </a>
         <!--
         <h3 class="title">
