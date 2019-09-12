@@ -29,9 +29,9 @@ Continuous Delivery is when the software is automatically built, tested and read
 
 An image illustrating both CI and CD:
 
-<img src="/assets/images/cicd.png" data-sizes="auto" data-src="/assets/images/cicd.png" alt="graph of CI and CD" class="lazy-loading" data-srcset="/assets/images/cicd.png 300w,
-    /assets/images/cicd.png 600w,
-    /assets/images/cicd.png 900w">
+<img src="/assets/images/cicd.jpg" data-sizes="auto" data-src="/assets/images/cicd.jpg" alt="graph of CI and CD" class="lazy-loading" data-srcset="/assets/images/cicd.png 300w,
+    /assets/images/cicd.jpg 600w,
+    /assets/images/cicd.jpg 900w">
 <cite>Image from [Atlassian](https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment)</cite>
 
 ### Installing And Configuring Jenkins
@@ -41,23 +41,23 @@ First you need to download Jenkins, to be able to download it navigate to the pa
 
 After downloading it, it will run on http://localhost:8080/, and you will get the following screen:
 
-<img data-sizes="auto" class="lazy-loading" src="/assets/images/jenkinslock.png" data-src="/assets/images/jenkinslock.png" alt="Jenkins first screen" data-srcset="/assets/images/jenkinslock.png 300w,
-    /assets/images/jenkinslock.png 600w,
-    /assets/images/jenkinslock.png 900w">
+<img data-sizes="auto" class="lazy-loading" src="/assets/images/jenkinslock.jpg" data-src="/assets/images/jenkinslock.jpg" alt="Jenkins first screen" data-srcset="/assets/images/jenkinslock.jpg 300w,
+    /assets/images/jenkinslock.jpg 600w,
+    /assets/images/jenkinslock.jpg 900w">
 
 Then navigate to the link and retrieve the password to be able to unlock Jenkins. Aftering unlocking Jenkins, you need to click on *Install suggested Plugins* and Jenkins will automatically install plugins like Ant, Gradle, Git, Subversion, etc...
 
 Then you need to create an admin user by filling the following fields:
 
-<img data-sizes="auto" class="lazy-loading" data-src="/assets/images/adminjenkins.png" src="/assets/images/adminjenkins.png" alt="Jenkins admin creation" data-srcset="/assets/images/adminjenkins.png 300w,
-    /assets/images/adminjenkins.png 600w,
-    /assets/images/adminjenkins.png 900w">
+<img data-sizes="auto" class="lazy-loading" data-src="/assets/images/adminjenkins.jpg" src="/assets/images/adminjenkins.jpg" alt="Jenkins admin creation" data-srcset="/assets/images/adminjenkins.jpg 300w,
+    /assets/images/adminjenkins.jpg 600w,
+    /assets/images/adminjenkins.jpg 900w">
 
 After adding information for admin user, you will reach the home page of Jenkins:
 
-<img data-sizes="auto" class="lazy-loading" data-src="/assets/images/jenkinshomepage.png" src="/assets/images/jenkinshomepage.png" alt="home page jenkins" data-srcset="/assets/images/jenkinshomepage.png 300w,
-    /assets/images/jenkinshomepage.png 600w,
-    /assets/images/jenkinshomepage.png 900w">
+<img data-sizes="auto" class="lazy-loading" data-src="/assets/images/jenkinshomepage.jpg" src="/assets/images/jenkinshomepage.jpg" alt="home page jenkins" data-srcset="/assets/images/jenkinshomepage.jpg 300w,
+    /assets/images/jenkinshomepage.jpg 600w,
+    /assets/images/jenkinshomepage.jpg 900w">
 
 Now you have a Jenkins server running but with no project, in the next section we will add a gradle project to Jenkins.
 
@@ -80,15 +80,15 @@ First, you need to install the git plugin and the gradle plugin to be able to us
 
 Then click on *Please create a new jobs to get started*, enter a name for the project, choose freestyle project and press *OK*.
 
-<img data-sizes="auto" class="lazy-loading"  data-src="/assets/images/jenkinsgradle.png" src="/assets/images/jenkinsgradle.png" alt="new item" data-srcset="/assets/images/jenkinsgradle.png 300w,
-    /assets/images/jenkinsgradle.png 600w,
-    /assets/images/jenkinsgradle.png 900w">
+<img data-sizes="auto" class="lazy-loading"  data-src="/assets/images/jenkinsgradle.jpg" src="/assets/images/jenkinsgradle.jpg" alt="new item" data-srcset="/assets/images/jenkinsgradle.jpg 300w,
+    /assets/images/jenkinsgradle.jpg 600w,
+    /assets/images/jenkinsgradle.jpg 900w">
 
 After that, navigate to the *Source Code Management* and click on *Git* to add your repository to Jenkins.
 
-<img data-sizes="auto" class="lazy-loading" data-src="/assets/images/gitJenkins.png" src="/assets/images/gitJenkins.png" alt="adding gradle project" data-srcset="/assets/images/gitJenkins.png 300w,
-    /assets/images/gitJenkins.png 600w,
-    /assets/images/gitJenkins.png 900w">
+<img data-sizes="auto" class="lazy-loading" data-src="/assets/images/gitJenkins.jpg" src="/assets/images/gitJenkins.jpg" alt="adding gradle project" data-srcset="/assets/images/gitJenkins.jpg 300w,
+    /assets/images/gitJenkins.jpg 600w,
+    /assets/images/gitJenkins.jpg 900w">
 
 ## Building the Project
 ---
@@ -97,24 +97,24 @@ To be able to build the project in gradle, we need to configure the build steps.
 
 Then choose the radio button *Gradle wrapper* so we can use the gradle version used in this project, and inside the task field write *build* so we can invoke the *build* gradle task.
 
-<img data-sizes="auto" class="lazy-loading" src="/assets/images/gradlebuild.png" data-src="/assets/images/gradlebuild.png" alt="gradle build steps" data-srcset="/assets/images/gradlebuild.png 300w,
-    /assets/images/gradlebuild.png 600w,
-    /assets/images/gradlebuild.png 900w">
+<img data-sizes="auto" class="lazy-loading" src="/assets/images/gradlebuild.jpg" data-src="/assets/images/gradlebuild.jpg" alt="gradle build steps" data-srcset="/assets/images/gradlebuild.png 300w,
+    /assets/images/gradlebuild.jpg 600w,
+    /assets/images/gradlebuild.jpg 900w">
 
 Now we can build the project by clicking on the **Build Now** button on the left side menu. We can then check the console output to see the logs:
 
-<img data-sizes="auto" class="lazy-loading" src="/assets/images/consoleoutput.png" data-src="/assets/images/consoleoutput.png" alt="console output" data-srcset="/assets/images/consoleoutput.png 300w,
-    /assets/images/consoleoutput.png 600w,
-    /assets/images/consoleoutput.png 900w">
+<img data-sizes="auto" class="lazy-loading" src="/assets/images/consoleoutput.jpg" data-src="/assets/images/consoleoutput.jpg" alt="console output" data-srcset="/assets/images/consoleoutput.png 300w,
+    /assets/images/consoleoutput.jpg 600w,
+    /assets/images/consoleoutput.jpg 900w">
 
 ## Build Trigger
 ---
 
 Build trigger will let you start a job that can be automatically done once a specified event occurs, example scheduling a job that gets triggers when there are changes in the repository.
 
-<img data-sizes="auto" class="lazy-loading" data-src="/assets/images/buildtrigger.png" src="/assets/images/buildtrigger.png" alt="build trigger" data-srcset="/assets/images/buildtrigger.png 300w,
-    /assets/images/buildtrigger.png 600w,
-    /assets/images/buildtrigger.png 900w">
+<img data-sizes="auto" class="lazy-loading" data-src="/assets/images/buildtrigger.jpg" src="/assets/images/buildtrigger.jpg" alt="build trigger" data-srcset="/assets/images/buildtrigger.png 300w,
+    /assets/images/buildtrigger.jpg 600w,
+    /assets/images/buildtrigger.jpg 900w">
 
 So, to be able to build according to changes in the repository you can use the *Poll SCM* option that will check the repository for changes and automatically build a new version. For example we can specify that we can Jenkins to check for changes in the repository every 15 minutes by adding the following to the *schedule* field:
 
