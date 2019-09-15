@@ -2,14 +2,14 @@
 layout: post
 comments: true
 title: How To Use Jenkins?
-description: In this tutorial, I will explain what is Jenkins and use a gradle project in Jenkins as an example.
+description: In this tutorial, I will explain the difference between CI and CD, what is Jenkins used for, how to download it, and use a gradle project in Jenkins as an example.
 ids: 7
 image: /assets/images/jenkinslogo.jpg
 category: DevOps
 ---
 
 <p class="message"> 
-Jenkins is an open source automation software that helps in continuous integration and continuous delivery.
+Jenkins is an open source automation software that helps in continuous integration and continuous delivery. In this tutorial, I will show you how to download jenkins and use a gradle project inside of it.
 </p>
 
 ## What is Jenkins?
@@ -31,11 +31,11 @@ Jenkins using CI will eliminate the above step, thus making it faster to produce
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-### What is Continuous Integration (CI)?
+## What is Continuous Integration (CI)?
 
 Continuous Integration is a practice in which developers commit their code daily to the repository. Every commit is then automatically built which will make it easier to detect different errors that may occur from the commits.
 
-### What is Continuous Delivery (CD)?
+## What is Continuous Delivery (CD)?
 
 Continuous Delivery is when the software is automatically built, tested and ready for production. Therefore, continuous delivery helps in automating the release process, the only manual thing that has to be done is deciding when the release should occur.
 
@@ -46,14 +46,16 @@ An image illustrating both CI and CD:
     /assets/images/cicd.jpg 900w">
 <cite>Image from [Atlassian](https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment)</cite>
 
-### Installing And Configuring Jenkins
+Hopefully this will give you a good idea about what continuous integration and continuous delivery. In the next section we will get started with using Jenkins where I will show you how to download, install and configure it!
+
+## Installing And Configuring Jenkins
 ---
 
 First you need to download Jenkins, to be able to download it navigate to the page [Jenkins Download](https://jenkins.io/download/), and then choose on which platform you want to download it.
 
 After downloading it, it will run on http://localhost:8080/, and you will get the following screen:
 
-<img data-sizes="auto" class="lazy-loading" src="/assets/images/jenkinslock.jpg" data-src="/assets/images/jenkinslock.jpg" alt="Jenkins first screen" data-srcset="/assets/images/jenkinslock.jpg 300w,
+<img data-sizes="auto" class="lazy-loading" src="/assets/images/jenkinslock.jpg" data-src="/assets/images/jenkinslock.jpg" alt="Jenkins download and how to use" data-srcset="/assets/images/jenkinslock.jpg 300w,
     /assets/images/jenkinslock.jpg 600w,
     /assets/images/jenkinslock.jpg 900w">
 
@@ -61,7 +63,7 @@ Then navigate to the link and retrieve the password to be able to unlock Jenkins
 
 Then you need to create an admin user by filling the following fields:
 
-<img data-sizes="auto" class="lazy-loading" data-src="/assets/images/adminjenkins.jpg" src="/assets/images/adminjenkins.jpg" alt="Jenkins admin creation" data-srcset="/assets/images/adminjenkins.jpg 300w,
+<img data-sizes="auto" class="lazy-loading" data-src="/assets/images/adminjenkins.jpg" src="/assets/images/adminjenkins.jpg" alt="using jenkins admin" data-srcset="/assets/images/adminjenkins.jpg 300w,
     /assets/images/adminjenkins.jpg 600w,
     /assets/images/adminjenkins.jpg 900w">
 
@@ -80,13 +82,13 @@ First, you need to install the git plugin and the gradle plugin to be able to us
 
 Then click on *Please create a new jobs to get started*, enter a name for the project, choose freestyle project and press *OK*.
 
-<img data-sizes="auto" class="lazy-loading"  data-src="/assets/images/jenkinsgradle.jpg" src="/assets/images/jenkinsgradle.jpg" alt="new item" data-srcset="/assets/images/jenkinsgradle.jpg 300w,
+<img data-sizes="auto" class="lazy-loading"  data-src="/assets/images/jenkinsgradle.jpg" src="/assets/images/jenkinsgradle.jpg" alt="gradle jenkins" data-srcset="/assets/images/jenkinsgradle.jpg 300w,
     /assets/images/jenkinsgradle.jpg 600w,
     /assets/images/jenkinsgradle.jpg 900w">
 
 After that, navigate to the *Source Code Management* and click on *Git* to add your repository to Jenkins.
 
-<img data-sizes="auto" class="lazy-loading" data-src="/assets/images/gitJenkins.jpg" src="/assets/images/gitJenkins.jpg" alt="adding gradle project" data-srcset="/assets/images/gitJenkins.jpg 300w,
+<img data-sizes="auto" class="lazy-loading" data-src="/assets/images/gitJenkins.jpg" src="/assets/images/gitJenkins.jpg" alt="adding gradle jenkins project" data-srcset="/assets/images/gitJenkins.jpg 300w,
     /assets/images/gitJenkins.jpg 600w,
     /assets/images/gitJenkins.jpg 900w">
 
@@ -103,11 +105,11 @@ Then choose the radio button *Gradle wrapper* so we can use the gradle version u
 
 Now we can build the project by clicking on the **Build Now** button on the left side menu. We can then check the console output to see the logs:
 
-<img data-sizes="auto" class="lazy-loading" src="/assets/images/consoleoutput.jpg" data-src="/assets/images/consoleoutput.jpg" alt="console output" data-srcset="/assets/images/consoleoutput.jpg 300w,
+<img data-sizes="auto" class="lazy-loading" src="/assets/images/consoleoutput.jpg" data-src="/assets/images/consoleoutput.jpg" alt="jenkins console output" data-srcset="/assets/images/consoleoutput.jpg 300w,
     /assets/images/consoleoutput.jpg 600w,
     /assets/images/consoleoutput.jpg 900w">
 
-## Build Trigger
+## Jenkins Build Trigger
 ---
 
 Build trigger will let you start a job that can be automatically done once a specified event occurs, example scheduling a job that gets triggers when there are changes in the repository.
@@ -132,4 +134,4 @@ This field follows the syntax of cron (with minor differences). Specifically, ea
 - MONTH	    The month (1–12)
 DOW	The day of the week (0–7) where 0 and 7 are Sunday.
 
-*I hope you enjoyed reading this jenkins tutorial, please feel free to leave any comments or feedback on this post!*
+*That's it for this tutorial, in the next tutorial I will expand more on devops and other stuff we can do using jenkins. I hope you enjoyed reading this jenkins tutorial, please feel free to leave any comments or feedback on this post!*
