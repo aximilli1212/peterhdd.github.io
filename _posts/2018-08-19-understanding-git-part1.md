@@ -18,9 +18,20 @@ Git is a free and open source distributed version control system designed to han
 ### Installing Git
 
 First you need to install Git to be able to use it. Since not everyone prefers to use the terminal, then you are able to install a Git Gui and a Git Bash from [git-scm](https://git-scm.com/downloads).
- After finishing the installation, if you are using windows operating system then you can right click and click Git Gui to open the graphical user interface.
+After finishing the installation, if you are using windows operating system then you can right click and click Git Gui to open the graphical user interface.
 
- In the below tutorial, I will give comparison between the Git Gui and Git Bash.
+In the below tutorial, I will give comparison between the Git Gui and Git Bash.
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- inside posts -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8689548599050263"
+     data-ad-slot="2590272657"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Initializing a Repository and Using it
 ---
@@ -64,17 +75,6 @@ Here you need to click on *Stage Changed* which will add the files to the stage 
 After you commit the files, you are now ready to push them! You need to push the files to the server so your team members, or the community if you are pushing to GitHub, can access the code.
 
 But, first you need to add the remote repository. Remote refers to any repository that is not in your local machine. Example, if you want to use Github you need to first create an account there and then create a repository to be able to push and pull. After adding a remote, you will be able to push the file to the repository.
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- inside posts -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-8689548599050263"
-     data-ad-slot="2590272657"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 
 #### Git Bash
 ```bash

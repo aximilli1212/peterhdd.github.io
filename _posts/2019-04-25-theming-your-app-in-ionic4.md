@@ -16,7 +16,17 @@ Ionic 4 is mostly used as a UI framework, it can be easily customized and change
 ---
 
 Ionic 4 uses Shadow DOM which is a web component standard. It allows you to seperate internal components of a customized element, and it also makes it easier for the ionic team to maintain the framework since you cannot style the elements that are inside the shadow DOM, except by using CSS custom properties. Further information about that will be provided later in the article.
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- inside posts -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8689548599050263"
+     data-ad-slot="2590272657"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 An Example of shadow Dom:
 
 <img src="/assets/images/shadowdom.jpg" data-src="/assets/images/shadowdom.jpg" class="lazy-loading" data-sizes="auto" alt="Shadow dom ionic 4" data-srcset="/assets/images/shadowdom.jpg 300w,
@@ -66,18 +76,6 @@ Then in the `home.page.html`, you can apply that style to a component:
 <ion-input class="input-size"  type="password" placeholder="Name"><ion-input>
 ```
 The last `scss` file is the `variables.scss` which is under the theme folder. It contains different custom colors to change the style of your application, more on that in the next section.
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- inside posts -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-8689548599050263"
-     data-ad-slot="2590272657"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 
 ## Colors
 ----

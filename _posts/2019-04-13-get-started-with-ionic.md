@@ -21,6 +21,17 @@ Ionic utilizes the command line, to be able to install it you need to open the t
     npm install -g ionic cordova
 
 **Note**: This will install both ionic framework and the cordova CLI. You also need to install node before being able to execute this command. You can find information about node in the following link [node install](https://www.npmjs.com/get-npm).
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- inside posts -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8689548599050263"
+     data-ad-slot="2590272657"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 After that you can execute the following command to start a project:
 
@@ -80,18 +91,6 @@ In this section, I will explain the different folders that will be avaiable afte
 * <span style='color:red'>_package.json_</span>, will contain information about all the different dependencies installed.
 * <span style='color:red'>_tslint.json_</span>, will contain different rules that will enable it to check if the typescript code is readable.
 * <span style='color:red'>_src_</span>, is the most important folder, it will contain all the pages and code of the project.
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- inside posts -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-8689548599050263"
-     data-ad-slot="2590272657"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 
 ### Explaining the src Folder Structure
 

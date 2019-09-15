@@ -19,6 +19,18 @@ Jenkins is an open source server that will automate alot of tasks like building,
 
 Jenkins using CI will eliminate the above step, thus making it faster to produce production software.
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- inside posts -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8689548599050263"
+     data-ad-slot="2590272657"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ### What is Continuous Integration (CI)?
 
 Continuous Integration is a practice in which developers commit their code daily to the repository. Every commit is then automatically built which will make it easier to detect different errors that may occur from the commits.
@@ -60,18 +72,6 @@ After adding information for admin user, you will reach the home page of Jenkins
     /assets/images/jenkinshomepage.jpg 900w">
 
 Now you have a Jenkins server running but with no project, in the next section we will add a gradle project to Jenkins.
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- inside posts -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-8689548599050263"
-     data-ad-slot="2590272657"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 
 ## Adding a Gradle Project
 ----
