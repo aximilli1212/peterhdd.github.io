@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: How To Use Jenkins?
-description: In this tutorial, I will explain the difference between CI and CD, what is Jenkins used for, how to download it, and use a gradle project in Jenkins as an example.
+description: In this jenkins tutorial, I will explain the difference between CI and CD, what is Jenkins used for, how to download it, and use a gradle project in Jenkins.
 ids: 7
 image: /assets/images/jenkinslogo.jpg
 category: DevOps
