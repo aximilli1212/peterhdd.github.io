@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: Theming your App In Ionic 4
-description: Ionic 4 is mostly used as a UI framework, it can be customized according to the requirements. In this ionic tutorial, we will learn how to theme the ionic app.
+description: Ionic 4 is mostly used as a UI framework, it can be customized according to the requirements. In this ionic tutorial, we will learn how to theme ionic 4 apps.
 ad: <a href="https://click.linksynergy.com/fs-bin/click?id=TozhwfAkrFw&offerid=467035.495&subid=0&type=4"><IMG border="0"   alt="Introduction to TensorFlow for AI, ML, and DL." src="https://ad.linksynergy.com/fs-bin/show?id=TozhwfAkrFw&bids=467035.495&subid=0&type=4&gridnum=16"></a>
 ids: 4
 category: Ionic
