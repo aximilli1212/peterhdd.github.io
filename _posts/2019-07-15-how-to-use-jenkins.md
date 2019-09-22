@@ -75,7 +75,32 @@ After adding information for admin user, you will reach the home page of Jenkins
     /assets/images/jenkinshomepage.jpg 600w,
     /assets/images/jenkinshomepage.jpg 900w">
 
-Now you have a Jenkins server running but with no project, in the next section we will add a gradle project to Jenkins.
+Now you have a Jenkins server running but with no project, in the following sections we will add new users, roles and a freestyle gradle project to Jenkins.
+
+## Creating New Users
+---
+To be able to create a new user in the jenkin server, first you need to login using the admin user, then click on *Manage Jenkins* and then click on *Manage Users*. There you can see all the users in this jenkins server and you can create a new user by clicking on *Create User*.
+
+<img data-sizes="auto" class="lazy-loading" data-src="/assets/images/new-user-jenkins.jpg" src="/assets/images/new-user-jenkins.jpg" alt="new user jenkins" data-srcset="/assets/images/new-user-jenkins.jpg 300w,
+    /assets/images/new-user-jenkins.jpg 600w,
+    /assets/images/new-user-jenkins.jpg 900w">
+
+Then add the information of the user, click on *Create User*, and you will have a new user in the jenkin server!
+
+You can also configure the new user. You can do that by first logging in to jenkins using the new user created, click on the arrow next to the user's name, and then click on *configure*. You will get the following screen:
+
+<img data-sizes="auto" class="lazy-loading" data-src="/assets/images/nconfigure-user.jpg" src="/assets/images/configure-user.jpg" alt="configure user jenkins" data-srcset="/assets/images/configure-user.jpg 300w,
+    /assets/images/configure-user.jpg 600w,
+    /assets/images/configure-user.jpg 900w">
+
+Here, you can change the name, email, and password of the user created. 
+
+<!-- In the next section, we will see how to assign roles to the different users in the jenkins server. -->
+
+<!-- ## Create And Manage User Roles
+---
+Every user in the jenkins server should have a different role, therefore we need to assign different roles for each user. First, we need to navigate to *manage jenkins* then click on *manage plugins* and download the plugin *Role-based Authorization Strategy* which will help us in creating global roles, such as admin, job creator, anonymous, etc. -->
+
 
 ## Adding a Gradle Project
 ----
