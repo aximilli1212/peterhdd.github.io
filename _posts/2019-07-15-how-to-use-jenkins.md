@@ -57,7 +57,7 @@ First you need to download Jenkins, to be able to download it navigate to the pa
 
 After downloading it, it will run on http://localhost:8080/, and you will get the following screen:
 
-<img data-sizes="auto" class="lazy-loading" src="/assets/images/jenkinslock.jpg" data-src="/assets/images/jenkinslock.jpg" alt="Jenkins download and how to use" data-srcset="/assets/images/jenkinslock.jpg 300w,
+<img data-sizes="auto" class="lazy-loading" src="/assets/images/jenkinslock.jpg" data-src="/assets/images/jenkinslock.jpg" alt="Jenkins download and how to use jenkins" data-srcset="/assets/images/jenkinslock.jpg 300w,
     /assets/images/jenkinslock.jpg 600w,
     /assets/images/jenkinslock.jpg 900w">
 
@@ -82,7 +82,7 @@ Now you have a Jenkins server running but with no project, in the next section w
 
 First, you need to install the git plugin and the gradle plugin to be able to use your repository and the gradle build scripts. To install them click on *Manage Jenkins* and then click on *Global Tool Configuration* and add the plugins. But, since you already used *Install suggested Plugins* when setting up Jenkins then those plugins will already be installed.
 
-Then click on *Please create a new jobs to get started*, enter a name for the project, choose freestyle project and press *OK*.
+Then click on *Please create a new jobs to get started*, enter a name for the project, choose **freestyle project** and press *OK*.
 
 <img data-sizes="auto" class="lazy-loading"  data-src="/assets/images/jenkinsgradle.jpg" src="/assets/images/jenkinsgradle.jpg" alt="gradle jenkins" data-srcset="/assets/images/jenkinsgradle.jpg 300w,
     /assets/images/jenkinsgradle.jpg 600w,
