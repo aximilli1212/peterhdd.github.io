@@ -21,9 +21,12 @@ First you need to install Git to be able to use it. Since not everyone prefers t
 After finishing the installation, if you are using windows operating system then you can right click and click Git Gui to open the graphical user interface.
 
 In the below tutorial, I will give comparison between the Git Gui and Git Bash.
+<style>
+  .example_responsive { width: 300px; height: 250px; }
+</style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- inside posts -->
-<ins class="adsbygoogle"
+<ins class="adsbygoogle example_responsive"
      style="display:block"
      data-ad-client="ca-pub-8689548599050263"
      data-ad-slot="2590272657"

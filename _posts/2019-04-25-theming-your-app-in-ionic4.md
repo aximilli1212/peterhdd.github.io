@@ -16,9 +16,12 @@ Ionic 4 is mostly used as a UI framework, it can be easily customized and change
 ---
 
 Ionic 4 uses Shadow DOM which is a web component standard. It allows you to seperate internal components of a customized element, and it also makes it easier for the ionic team to maintain the framework since you cannot style the elements that are inside the shadow DOM, except by using CSS custom properties. Further information about that will be provided later in the article.
+<style>
+  .example_responsive { width: 300px; height: 250px; }
+</style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- inside posts -->
-<ins class="adsbygoogle"
+<ins class="adsbygoogle example_responsive"
      style="display:block"
      data-ad-client="ca-pub-8689548599050263"
      data-ad-slot="2590272657"

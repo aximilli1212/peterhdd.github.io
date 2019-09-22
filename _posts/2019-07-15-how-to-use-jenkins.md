@@ -18,10 +18,12 @@ Jenkins is an open source automation software that helps in continuous integrati
 Jenkins is an open source server that will automate alot of tasks like building, testing and deploying software. Teams that do not use Jenkins have to wait for Person A in the team to commit his code, so Person B can take the update from the repository and manually build the project to verify the build. 
 
 Jenkins using CI will eliminate the above step, thus making it faster to produce production software.
-
+<style>
+  .example_responsive { width: 300px; height: 250px; }
+</style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- inside posts -->
-<ins class="adsbygoogle"
+<ins class="adsbygoogle example_responsive"
      style="display:block"
      data-ad-client="ca-pub-8689548599050263"
      data-ad-slot="2590272657"
