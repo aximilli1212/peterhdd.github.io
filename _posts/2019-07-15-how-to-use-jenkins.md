@@ -114,7 +114,7 @@ In the manage role, their are three types of roles. The global role provide role
     /assets/images/manageroles.jpg 600w,
     /assets/images/manageroles.jpg 900w">
 
-Then you can click on *apply* and *save*. To assign these roles to specific users, you need to click on the option *Assign Roles* in the previous page. In that page, you can choose either one user or a group and assign them the roles that you created.
+Then you can click on *apply* and *save*. To assign these roles to specific users, you need to click on the option *Assign Roles* in the previous page. In that page, you can choose either one user or a group and assign them the roles that you created. That's how you can manage and assign roles, in the next section we will add a new gradle project to jenkins.
 
 
 ## Adding a Gradle Project
