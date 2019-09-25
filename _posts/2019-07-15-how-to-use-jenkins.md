@@ -95,11 +95,26 @@ You can also configure the new user. You can do that by first logging in to jenk
 
 Here, you can change the name, email, and password of the user created. 
 
-<!-- In the next section, we will see how to assign roles to the different users in the jenkins server. -->
+In the next section, we will see how to assign roles to the different users in the jenkins server.
 
-<!-- ## Create And Manage User Roles
+## Create And Manage User Roles
 ---
-Every user in the jenkins server should have a different role, therefore we need to assign different roles for each user. First, we need to navigate to *manage jenkins* then click on *manage plugins* and download the plugin *Role-based Authorization Strategy* which will help us in creating global roles, such as admin, job creator, anonymous, etc. -->
+Every user in the jenkins server should have a different role, therefore we need to assign different roles for each user. Therefore, first we need to navigate to *manage jenkins* then click on *manage plugins* and download the plugin *Role-based Authorization Strategy* which will help us in creating global roles, such as admin, job creator, anonymous, etc. After installing it, navigate to *configure global security* and check *Role-Based Strategy* to enable it.
+
+<img data-sizes="auto" class="lazy-loading"  data-src="/assets/images/role.jpg" src="/assets/images/role.jpg" alt="role jenkins" data-srcset="/assets/images/role.jpg 300w,
+    /assets/images/role.jpg 600w,
+    /assets/images/role.jpg 900w">
+
+You can now assign roles, first login using the admin account. Then navigate to *manage jenkins > manage and assign roles*. You will see three options, first one is to manage current roles and second one is to assign roles to users.
+
+In the manage role, their are three types of roles. The global role provide roles on a global level, you can also add different role inside the global role. The second type is the project role, in this case the role is only applied on a project. Also you can set a regular expression pattern for matching items, so if you have a project that starts with *test* and in the regular expression you added `test.*` then if a user has that role they can only access the projects that start with `test`. As you can see in the image below, I added different roles and for the project role I created a `developer` role with pattern `dev.*`.
+
+
+<img data-sizes="auto" class="lazy-loading"  data-src="/assets/images/manageroles.jpg" src="/assets/images/manageroles.jpg" alt="manage role jenkins" data-srcset="/assets/images/manageroles.jpg 300w,
+    /assets/images/manageroles.jpg 600w,
+    /assets/images/manageroles.jpg 900w">
+
+Then you can click on *apply* and *save*. To assign these roles to specific users, you need to click on the option *Assign Roles* in the previous page. In that page, you can choose either one user or a group and assign them the roles that you created.
 
 
 ## Adding a Gradle Project
