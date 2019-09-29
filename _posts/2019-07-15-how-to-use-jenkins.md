@@ -177,3 +177,41 @@ This field follows the syntax of cron (with minor differences). Specifically, ea
 DOW	The day of the week (0–7) where 0 and 7 are Sunday.
 
 *That's it for this tutorial, in the next tutorial I will expand more on devops and other stuff we can do using jenkins. I hope you enjoyed reading this jenkins tutorial, please feel free to leave any comments or feedback on this post!*
+
+## Sending Emails
+
+After every build, you can send an email to notify the employees that have access on this project of the build result. To configure the email first you need to go to *manage jenkins* then click on *configure system* and enable *e-mail notification*. Then inside the field *SMTP server* add *smtp.gmail.com* to be able to use gmail to recieve the email notifications.
+
+<img data-sizes="auto" class="lazy-loading" data-src="/assets/images/emailnotify.jpg" src="/assets/images/emailnotify.jpg" alt="email jenkins" data-srcset="/assets/images/emailnotify.jpg 300w,
+    /assets/images/emailnotify.jpg 600w,
+    /assets/images/emailnotify.jpg 900w">
+
+Also if you are using gmail then dont forget to change the port to 465 and to enable authentication and use ssl as in the image above. 
+
+Now you can navigate to any jenkins project, click on the *post build action* and choose *email notification*.
+
+<img data-sizes="auto" class="lazy-loading" data-src="/assets/images/emailbuild.jpg" src="/assets/images/emailbuild.jpg" alt="email jenkins build" data-srcset="/assets/images/emailbuild.jpg 300w,
+    /assets/images/emailbuild.jpg 600w,
+    /assets/images/emailbuild.jpg 900w">
+
+Then the recipient will recieve an email related to the build.
+
+*I hope you enjoyed reading this jenkins tutorial, please feel free to leave any comments or feedback on this post!*
+
+<!-- ## Pipeline Project
+
+Pipeline project will enable you to use code to implement the project's entire build/test/deploy and you can put that code inside the *jenkinsfile*.
+
+First we create a *new item*, give the project a name and choose pipeline project. Then navigate to the *configure* screen, you will notice that in the pipeline project there is no *build* or *post build action*. Now you can use the groovy DSL to perform the build/test/deploy.
+
+<img data-sizes="auto" class="lazy-loading" data-src="/assets/images/pipelineproj.jpg" src="/assets/images/pipelineproj.jpg" alt="pipeline groovy" data-srcset="/assets/images/pipelineproj.jpg 300w,
+    /assets/images/pipelineproj.jpg 600w,
+    /assets/images/pipelineproj.jpg 900w">
+
+### Adding Groovy Code
+
+First click on *pipeline syntax*, that will open a new page, so you can choose the sample steps and it will automatically generate the code.
+
+<img data-sizes="auto" class="lazy-loading" data-src="/assets/images/groovysyntax.jpg" src="/assets/images/groovysyntax.jpg" alt="pipeline groovy" data-srcset="/assets/images/groovysyntax.jpg 300w,
+    /assets/images/groovysyntax.jpg 600w,
+    /assets/images/groovysyntax.jpg 900w"> -->
