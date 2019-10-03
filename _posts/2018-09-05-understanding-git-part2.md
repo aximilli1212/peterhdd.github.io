@@ -84,9 +84,12 @@ Extra information about Git, that may help you in your daily life.
     </tr>
   </tbody>
   </table>
+<style>
+  .example_responsive { width: 300px; height: 250px; }
+</style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- inside posts -->
-<ins class="adsbygoogle"
+<ins class="adsbygoogle example_responsive"
      style="display:block"
      data-ad-client="ca-pub-8689548599050263"
      data-ad-slot="2590272657"

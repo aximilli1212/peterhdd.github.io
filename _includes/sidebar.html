@@ -58,20 +58,21 @@
 </div>
 
 <div class="sidebar well">
-    {% include links-list.html %}
+    {% assign trans = site.data.values[site.lan] %}
+    <h1>{{ trans.links }}</h1>
+    {% include stackOverFlowFlair.html %}
+  <div class="sc"></div>
 </div>
 {% if page.noad != 1 %}
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <!-- vertical ad -->
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-8689548599050263"
-         data-ad-slot="7412301644"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Testing side 300*600 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:600px"
+     data-ad-client="ca-pub-8689548599050263"
+     data-ad-slot="7724756241"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 {% endif %}
 <div class="sidebar well">
     <h1>{{ trans.recent_posts }}</h1>

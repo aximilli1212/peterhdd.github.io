@@ -5,7 +5,6 @@ noad : 1
 ---
 
 
-  {% include shareIcons.html %}
   <div class="article">
 Peter is an enthusiast programmer, he lives in Lebanon, enjoys learning new languages and helping other developers in their problems. 
 

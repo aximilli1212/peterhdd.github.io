@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: Getting Started with Ionic
-description: Ionic helps you to create hybrid applications, the latest version of ionic is ionic 4. In this getting started with ionic tutorial we will build a simple page.
+description: Ionic Framework helps you to create hybrid applications. In this getting started with ionic tutorial, we will see how to download, generate a page and create a form.
 ad: <iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=12&l=ur1&category=software&banner=0BSSVHTA3XB4Y210FD82&f=ifr&linkID=fd41d430ec3b71cc5b75d15f7227d096&t=petercoding20-20&tracking_id=petercoding20-20" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
 ids: 3
 category: Ionic
@@ -14,13 +14,27 @@ Ionic is a framework that helps you to create hybrid applications, thus you will
 ## Getting Started
 ---
 
-### Installing Ionic
+## Installing Ionic
 
 Ionic utilizes the command line, to be able to install it you need to open the terminal and execute the following command:
 
     npm install -g ionic cordova
 
 **Note**: This will install both ionic framework and the cordova CLI. You also need to install node before being able to execute this command. You can find information about node in the following link [node install](https://www.npmjs.com/get-npm).
+<style>
+  .example_responsive { width: 300px; height: 250px; }
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- inside posts -->
+<ins class="adsbygoogle example_responsive"
+     style="display:block"
+     data-ad-client="ca-pub-8689548599050263"
+     data-ad-slot="2590272657"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 After that you can execute the following command to start a project:
 
@@ -30,13 +44,13 @@ Then the project will be created and you can navigate to the folder using `cd` a
 
 You will get the following in the browser:
 
-<img class="lazy-loading" data-sizes="auto" src="/assets/images/ionicStart.jpg" width="400" data-src="/assets/images/ionicStart.jpg" alt="reorder list" data-srcset="/assets/images/ionicStart.jpg 300w,
+<img class="lazy-loading" data-sizes="auto" src="/assets/images/ionicStart.jpg" width="400" data-src="/assets/images/ionicStart.jpg" alt="ionic getting started" data-srcset="/assets/images/ionicStart.jpg 300w,
     /assets/images/ionicStart.jpg 600w,
     /assets/images/ionicStart.jpg 900w">
 
 **Note**: `blank` is a template that the ionic team created so we can use it in our projects. There are two other options like `tabs` and `sidemenu`.
 
-## Command List
+## Ionic Command List
 ---
 
 The following tables contains the most used commands in ionic projects:
@@ -81,19 +95,7 @@ In this section, I will explain the different folders that will be avaiable afte
 * <span style='color:red'>_tslint.json_</span>, will contain different rules that will enable it to check if the typescript code is readable.
 * <span style='color:red'>_src_</span>, is the most important folder, it will contain all the pages and code of the project.
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- inside posts -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-8689548599050263"
-     data-ad-slot="2590272657"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-### Explaining the src Folder Structure
+## Explaining the src Folder Structure
 
 Inside the `src` folder, you will find the `app` folder which will contain the different pages that were generated using the command `ionic generate page <Page_Name>`. Each page will have 4 files, the `home.module.ts` which will contain the `@NgModule decorator` that will let you import other modules, declare components to be used in the page or add services and plugins inside the `providers` array. For example
 
@@ -212,7 +214,7 @@ You can find the github repository of the project in the following link:
 
 After running the project locally, you should get:
 
-<img class="lazy-loading" data-sizes="auto" src="/assets/images/reactiveFormTutorial.jpg" width="400" data-src="/assets/images/reactiveFormTutorial.jpg" alt="reorder list" data-srcset="//assets/images/reactiveFormTutorial.jpg 300w,
+<img class="lazy-loading" data-sizes="auto" src="/assets/images/reactiveFormTutorial.jpg" width="400" data-src="/assets/images/reactiveFormTutorial.jpg" alt="ionic form" data-srcset="//assets/images/reactiveFormTutorial.jpg 300w,
     /assets/images/reactiveFormTutorial.jpg 600w,
     /assets/images/reactiveFormTutorial.jpg 900w">
 

@@ -4,17 +4,23 @@ layout: default
 {% assign trans = site.data.values[site.lan] %}
 <div class="well article">
     {{page.ad}}
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
+    <style>
+        .example_responsive_1 { width: 320px; height: 100px; }
+        @media(min-width: 500px) { .example_responsive_1 { width: 468px; height: 60px; } }
+        @media(min-width: 800px) { .example_responsive_1 { width: 728px; height: 90px; } }
+    </style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- top of the page -->
+<ins class="adsbygoogle example_responsive_1"
+     style="display:block"
      data-ad-client="ca-pub-8689548599050263"
-     data-ad-slot="2096395781"></ins>
+     data-ad-slot="8121487273"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-        <h2><a href="{{ site.url}}{{ page.url }}">{{ page.title }}</a></h2>
+        <h1><a href="{{ site.url}}{{ page.url }}">{{ page.title }}</a></h1>
         <span class="post-date">
             {% assign date_format = site.date_format.title %}
             {{ page.date | date: date_format }}
@@ -94,7 +100,6 @@ layout: default
 
     </div>
     {% include comments.html %}
-    {% include shareIcons.html %}
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <ins class="adsbygoogle"
          style="display:block"
