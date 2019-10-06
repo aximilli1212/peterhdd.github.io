@@ -1,8 +1,8 @@
 ---
 layout: post
 comments: true
-title: How To Use Jenkins?
-description: In this jenkins tutorial, I will explain the difference between CI and CD, what is Jenkins used for, how to download it, and use a gradle project in Jenkins.
+title: What Does Jenkins Do?
+description: Jenkins is an automation software that is used in devops, in this tutorial I will explain what does jenkins do, how to download it, how to send emails, and use it in a gradle project
 ids: 7
 image: /assets/images/jenkinslogo.jpg
 category: DevOps
@@ -57,7 +57,7 @@ First you need to download Jenkins, to be able to download it navigate to the pa
 
 After downloading it, it will run on http://localhost:8080/, and you will get the following screen:
 
-<img data-sizes="auto" class="lazy-loading" src="/assets/images/jenkinslock.jpg" data-src="/assets/images/jenkinslock.jpg" alt="Jenkins download and how to use jenkins" data-srcset="/assets/images/jenkinslock.jpg 300w,
+<img data-sizes="auto" class="lazy-loading" src="/assets/images/jenkinslock.jpg" data-src="/assets/images/jenkinslock.jpg" alt="Jenkins download and what does jenkins do" data-srcset="/assets/images/jenkinslock.jpg 300w,
     /assets/images/jenkinslock.jpg 600w,
     /assets/images/jenkinslock.jpg 900w">
 

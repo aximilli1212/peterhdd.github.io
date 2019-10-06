@@ -1,6 +1,7 @@
 ---
 layout: default
 title: About
+noad : 1
 ---
 
 
@@ -48,3 +49,4 @@ To contact him, just fill in your details using this form.
   </div>
   <button type="submit" class="btn btn-primary" value="Send">Send</button>
 </form>
+<br>

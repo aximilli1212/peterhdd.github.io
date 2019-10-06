@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: Getting Started with Ionic
-description: Ionic Framework helps you to create hybrid applications. In this getting started with ionic tutorial, we will see how to download, generate a page and create a form.
+description: Ionic Framework helps you to create hybrid applications. In this getting started with ionic tutorial, we will see how to download, generate a page, create a form and add a plugin.
 ad: <iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=12&l=ur1&category=software&banner=0BSSVHTA3XB4Y210FD82&f=ifr&linkID=fd41d430ec3b71cc5b75d15f7227d096&t=petercoding20-20&tracking_id=petercoding20-20" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
 ids: 3
 category: Ionic
@@ -218,13 +218,52 @@ After running the project locally, you should get:
     /assets/images/reactiveFormTutorial.jpg 600w,
     /assets/images/reactiveFormTutorial.jpg 900w">
 
-## Recommended Books
----
-<span>
-<a target="_blank"  href="https://www.amazon.com/gp/product/1484237749/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1484237749&linkCode=as2&tag=petercoding20-20&linkId=415617cdb28711347870172f34662e0f"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=1484237749&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=petercoding20-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=petercoding20-20&l=am2&o=1&a=1484237749" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;"/>
-</span>
-<span>
-<a target="_blank"  href="https://www.amazon.com/gp/product/1548991996/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1548991996&linkCode=as2&tag=petercoding20-20&linkId=a346e9d7d9d730f3c8da1c95511ffce7"><img class="imgDisplay" border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=1548991996&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=petercoding20-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=petercoding20-20&l=am2&o=1&a=1548991996" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;"/>
-</span>
+## Plugins
+### Adding A Plugin
+
+Ionic is a hybrid framework used to create mobile applications, but every application needs to use features that are available in the device. Ionic uses Cordova to be able to use native features. Cordova offers different plugins to communicate with the device.
+
+Therefore first you need to download a cordova plugin, you can find the plugins in the following website: [community plugins](https://ionicframework.com/docs/native/overview). Then you can use different methods that the plugin offers. Let's take an example, if we want to get the details of a device we can download the `device` plugin. Therefore after creating a new project we need to execute the following commands:
+
+```
+ionic cordova plugin add cordova-plugin-device
+npm install @ionic-native/device
+```
+After executing the above commands, the `Device` plugin should be automically added to the `providers` array in the `app.module.ts`. Then you can import it in the page and start using it, example:
+
+```
+import { Device } from '@ionic-native/device/ngx';
+
+constructor(private device: Device) { }
+console.log('Device UUID is: ' + this.device.uuid);
+```
+Here, first we import the `Device` then add it to the constructor, which also creates an instance of `Device` **Note:** [Dependency Injection](https://angular.io/guide/dependency-injection). After that you will be able to use the properties and method of `Device`. You can find the repository of the device plugin in the following link: [Device Plugin](https://github.com/apache/cordova-plugin-device). As you can see, we can use `var string = device.platform;` which will retrieve the platform of this device.
+
+### Adding Platforms
+
+Cordova plugins are aimed to be used in ios or android platform, so to be able to see the output of some plugins you need to add those platforms and run the application on an emulator or a physical device.
+
+To add the android platform you can execute the following commands:
+
+```
+ionic cordova platform add android
+ionic cordova platform build android
+```
+The following two commands will add, build the application and create an `apk`. You can also specify the version of the android platform by doing for example `ionic cordova platform add android@8`.
+
+To add the ios platform you can execute the following commands:
+
+```
+ionic cordova platform add ios
+ionic cordova platform build ios
+```
+Then you can connect an iphone to the macbook, open xcode and run the application on the device.
+
+To remove a platform, you can execute the following command:
+
+```
+ionic cordova platform rm <platform_name>
+```
+
 
 *I hope you enjoyed reading this ionic tutorial, please feel free to leave any comments or feedback on this post!*
