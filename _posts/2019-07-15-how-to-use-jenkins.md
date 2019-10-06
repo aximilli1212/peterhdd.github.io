@@ -197,21 +197,3 @@ Now you can navigate to any jenkins project, click on the *post build action* an
 Then the recipient will recieve an email related to the build.
 
 *I hope you enjoyed reading this jenkins tutorial, please feel free to leave any comments or feedback on this post!*
-
-<!-- ## Pipeline Project
-
-Pipeline project will enable you to use code to implement the project's entire build/test/deploy and you can put that code inside the *jenkinsfile*.
-
-First we create a *new item*, give the project a name and choose pipeline project. Then navigate to the *configure* screen, you will notice that in the pipeline project there is no *build* or *post build action*. Now you can use the groovy DSL to perform the build/test/deploy.
-
-<img data-sizes="auto" class="lazy-loading" data-src="/assets/images/pipelineproj.jpg" src="/assets/images/pipelineproj.jpg" alt="pipeline groovy" data-srcset="/assets/images/pipelineproj.jpg 300w,
-    /assets/images/pipelineproj.jpg 600w,
-    /assets/images/pipelineproj.jpg 900w">
-
-### Adding Groovy Code
-
-First click on *pipeline syntax*, that will open a new page, so you can choose the sample steps and it will automatically generate the code.
-
-<img data-sizes="auto" class="lazy-loading" data-src="/assets/images/groovysyntax.jpg" src="/assets/images/groovysyntax.jpg" alt="pipeline groovy" data-srcset="/assets/images/groovysyntax.jpg 300w,
-    /assets/images/groovysyntax.jpg 600w,
-    /assets/images/groovysyntax.jpg 900w"> -->
