@@ -1,4 +1,4 @@
-<!-- ---
+---
 layout: post
 comments: true
 title: What Is Travis CI?
@@ -45,4 +45,4 @@ This will specify that `nodejs` is the language and that version 7 needs to be u
     /assets/images/buildfailed.jpg 600w,
     /assets/images/buildfailed.jpg 900w">
 
-As you can see in the repository the build failed, and you can know what the error is by checking the logs. -->
+As you can see in the repository the build failed, and you can know what the error is by checking the logs.
