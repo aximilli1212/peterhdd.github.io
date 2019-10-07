@@ -36,13 +36,40 @@ Then to activate travis ci on every commit in the repository, you need to create
 ```
 language: node_js
 node_js:
-  - 7
+  - 10.15.0
+
+branches:
+  only:
+  - master
+before_script:
+  - npm install -g @angular/cli
+script:
+- ng lint
+- ng build --prod
 ```
 
-This will specify that `nodejs` is the language and that version 7 needs to be used. After executing `git push origin master`, travis ci will build the project. So first the command `npm install` will be executed and then `npm test` will be executed. Since this is an ionic project then in the `package.json` there will be `ng test` for the script `test`. You can then access the logs of the builds by going to to travis ci. You will also recieve an email about the status of the build. Also when the build is triggered it will update all the dependencies that contain new versions.
+This will specify that `nodejs` is the language and that version 10.15.0 needs to be used. Also this will only check the master branch for any changes. The `before_script` is used to prevent any scripting running before installing `@angular/cli`. Then `ng lint` is executed and after `ng build --prod`.  Therefore, after executing `git push origin master`, travis ci will build the project. You can then access the logs of the builds by going to to travis ci. You will also recieve an email about the status of the build.
 
-<img data-sizes="auto" class="lazy-loading" data-src="/assets/images/buildfailed.jpg" src="/assets/images/buildfailed.jpg" alt="travis ci build failed" data-srcset="/assets/images/activate.jpg 300w,
-    /assets/images/buildfailed.jpg 600w,
-    /assets/images/buildfailed.jpg 900w">
+<img data-sizes="auto" class="lazy-loading" data-src="/assets/images/success.jpg" src="/assets/images/success.jpg" alt="travis ci build success" data-srcset="/assets/images/success.jpg 300w,
+    /assets/images/success.jpg 600w,
+    /assets/images/success.jpg 900w">
 
-As you can see in the repository the build failed, and you can know what the error is by checking the logs.
+As you can see from the above screen, it successfully built the project.
+
+**Note**: It is very important that the version specified in the `.travis.yml` file, should be the same as the `nodejs` version used locally.
+
+One nice feature when using travis ci and github, is the automatic security fixes, so whenever you get the following dependency error:
+
+<img data-sizes="auto" class="lazy-loading" data-src="/assets/images/security.jpg" src="/assets/images/security.jpg" alt="travis ci security " data-srcset="/assets/images/security.jpg 300w,
+    /assets/images/security.jpg 600w,
+    /assets/images/security.jpg 900w">
+
+And when executing a build on travis ci, the "dependabot" will perform a pull request and update the dependencies that contain security vulnerabilities. You can learn more about the automatic security fixes in the following link [Configuring automated security fixes](https://help.github.com/en/articles/configuring-automated-security-fixes).
+
+----
+
+Also, if you click on the `build success` badge, then you can take the `markdown` and add it to the `readme` in your github repository.
+
+<img data-sizes="auto" class="lazy-loading" data-src="/assets/images/badge.jpg" src="/assets/images/badge.jpg" alt="travis ci build badge" data-srcset="/assets/images/badge.jpg 300w,
+    /assets/images/badge.jpg 600w,
+    /assets/images/badge.jpg 900w">
