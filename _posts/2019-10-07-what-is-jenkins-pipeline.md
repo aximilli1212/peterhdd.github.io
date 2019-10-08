@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: What Is Jenkins Pipeline?
-description: In this jenkins tutorial, I will explain what is jenkins pipeline, what is jenkinsfile and how to use groovy code to execute jobs.
+description: In this jenkins tutorial, I will explain what is jenkins pipeline, what is jenkinsfile and how to use groovy dsl to execute jobs.
 ids: 7
 category: DevOps
 ---
@@ -11,7 +11,7 @@ category: DevOps
 Jenkins pipeline is a group of events or jobs that are linked with each other in sequence.
 </p>
 
-## Creating a Pipeline Project
+## Creating a Jenkins Pipeline Project
 
 Pipeline project will enable you to use groovy code to implement the project's entire build/test/deploy and you can put that code inside the *jenkinsfile* (more on that later).
 
