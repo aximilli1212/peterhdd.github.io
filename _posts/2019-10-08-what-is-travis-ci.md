@@ -10,7 +10,7 @@ category: DevOps
 <p class="message"> 
 Travis CI is a continuous integration service that is used mostly in Github. It also provides free plan for open source projects. Also it is a hosted service, which means you don't have to host your own server unlike jenkins.
 </p>
-</br>
+<br>
 <div style="display:flex">
 <img data-sizes="auto" class="lazy-loading" data-src="/assets/images/rsz_travis.jpg" src="/assets/images/rsz_travis.jpg" alt="travis ci logo" data-srcset="/assets/images/rsz_travis.jpg 300w,
     /assets/images/rsz_travis.jpg 600w,
