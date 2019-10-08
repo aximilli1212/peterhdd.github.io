@@ -14,6 +14,7 @@ Travis CI is a continuous integration service that is used mostly in Github. It 
 <img data-sizes="auto" class="lazy-loading" data-src="/assets/images/rsz_travis.jpg" src="/assets/images/rsz_travis.jpg" alt="travis ci logo" data-srcset="/assets/images/rsz_travis.jpg 300w,
     /assets/images/rsz_travis.jpg 600w,
     /assets/images/rsz_travis.jpg 900w">
+
 <i>
 Note: This tutorial is mostly an explanation how to use Travis CI, if you want to learn what continuous integration and Continuous Delivery are, then check the tutorial before <a href="https://petercoding.com/devops/2019/07/15/what-does-jenkins-do/"> What Does Jenkins Do?</a>
 </i>
