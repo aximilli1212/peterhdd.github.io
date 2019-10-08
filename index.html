@@ -28,7 +28,7 @@ description: Learn how to build your own apps using android & java or hybrid fra
     </h2>
     
     <div class="post-description">
-        {{ post.excerpt }}
+        {{ post.excerpt | strip_html  }}
     </div>
     <a href="{{ post.url }}" class="reading" style="border-bottom: 1px solid black">Continue Reading  <span><i class='fas fa-arrow-right'></i></span></a>
     
