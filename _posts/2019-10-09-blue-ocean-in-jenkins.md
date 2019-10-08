@@ -19,6 +19,22 @@ First, to get started in using blue ocean, we need to download it. We can do tha
     /assets/images/blueocean.jpg 600w,
     /assets/images/blueocean.jpg 900w">
 
+<style>
+  .example_responsive { width: 300px; height: 250px; }
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- inside posts -->
+<ins class="adsbygoogle example_responsive"
+     style="display:block"
+     data-ad-client="ca-pub-8689548599050263"
+     data-ad-slot="2590272657"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
 Then click the checkbox and download the blue ocean plugin and restart Jenkins to be able to use blue ocean. After restarting Jenkins, a new button called "open blue ocean" will be displayed.
 
 <img data-sizes="auto" class="lazy-loading" data-src="/assets/images/openblueocean.jpg" src="/assets/images/openblueocean.jpg" alt="blue ocean jenkins" data-srcset="/assets/images/openblueocean.jpg 300w,
