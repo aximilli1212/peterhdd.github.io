@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: What Is Travis CI?
 description: In this devops tutorial, I will talk about a different CI other than jenkins that is called travis ci. I will explain what is it, how to download and setup it on github.
-ids: 7
+ids: 9
 category: DevOps
 ---
 

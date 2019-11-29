@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: Blue Ocean In Jenkins
 description: Blue Ocean was created to easily visualize the jenkins pipeline, and also so the developers gets a good experience after using Jenkins.
-ids: 7
+ids: 10
 category: DevOps
 ---
 
@@ -99,5 +99,11 @@ After adding all the required *stages*, you can click on *save* and a new Jenkis
     /assets/images/blueoceanout.jpg 900w">
 
 As you can see from the output that the *stage* was executed and the *steps* which consisted of display `hello world` has worked.
+
+## Gradle Project In Blue Ocean
+
+First, navigate to the dashboard and click on *New Pipeline*, choose the repository, and the project and click on *create pipeline*.
+
+First lets perform a pull request and see what happens, to create a pull request, you need to create a new branch and then do some changes and commit. In my case I deleted the old `jenkinsfile` inside the new `dev` branch. Then you can click on *Compare & pull request*.
 
 *I hope you enjoyed reading this blue ocean tutorial, please feel free to leave any comments or feedback on this post!*

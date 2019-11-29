@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: What Is Jenkins Pipeline?
 description: In this jenkins tutorial, I will explain what is jenkins pipeline, what is jenkinsfile and how to use groovy dsl to execute jobs.
-ids: 7
+ids: 8
 category: DevOps
 ---
 
