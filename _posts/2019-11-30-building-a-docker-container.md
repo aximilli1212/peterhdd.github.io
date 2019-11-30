@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: Building a Docker Container
-description: In this guide we will build a container, explain what is docker, docker compose, docker hub, dockerfile and use a spring boot project in docker.
+description: In this guide we will build a docker container, explain what is docker, compose, docker hub, dockerfile and use a spring boot project in docker.
 ids: 11
 category: DevOps
 ---
@@ -198,8 +198,8 @@ Below are the most used commands:
 - `RUN`, which is used to execute commands when building the image
 - `ADD`, copies new files, directories or remote file URLs from <src> and adds them to the filesystem of the image
 - `ENV`, sets the environment variable
-- `CMD`, which is used for executing commands when building a new container
-- `ENTRYPOINT`, allows you to configure a container that will run as an executable
+- `CMD [“executable”, “arg1”, “arg2”]`, which is used for executing commands when building a new container, which can be overridden by passing arguments in `docker run`
+- `ENTRYPOINT [“executable”, “arg1”, “arg2”]`, allows you to configure a container that will run as an executable, which cannot be overridden.
 - `VOLUME`, creates a directory mount point to access and store persistent data
 - `COPY`, copies files and directories to the container
 - `ARG`, defines a variable to pass to Docker at build-time
@@ -286,3 +286,42 @@ Finally, you need to execute `docker tag` to give the image a new `tag` and then
 docker tag spring-docker 1203953/spring-docker:0.1.1-SNAPSHOT
 docker push 1203953/spring-docker:0.1.1-SNAPSHOT
 ```
+## Docker Compose
+
+Docker compose is a tool for defining and running multi-container docker application. When you use compose, you can use a YAML file to configure the application services, then with one command you can create and start all the services from your configuration.
+
+Thus, docker compose helps in start, stop and rebuilding the services, and it also helps in viewing the status and log of the running services. You can also use `docker compose` on the terminal. For example, you can execute `docker-compose version` which will give you the version of docker compose:
+
+```
+docker-compose version 1.24.1, build 4667896b
+docker-py version: 3.7.3
+CPython version: 3.6.8
+OpenSSL version: OpenSSL 1.1.0j  20 Nov 2018
+```
+
+Also you can use the command `docker-compose ps` which will return lists of containers related to images declared in `docker-compose` file. 
+
+Let's say we have a project that uses `Django` and `PostgreSQL`, we first create a dockerfile that will contain the commands to build the image. Then we add a `docker-compose.yml` file that describes the services used in this project. Since we are using both `Django` and `PostgreSQL` then we will have two services a web server and a database. For example, we can have the following `docker-compose.yml` file:
+
+```yaml
+version: '3'
+
+services:
+  db:
+    image: postgres
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+```
+
+So here we are using `version` 3 of docker compose file. The `services` block will contain the `db` and the `web` service. Inside the `db` block we declare that we will use the `image` postgres. Then inside the `web` block we assign the path `.` to the `build`, we declare the ports, and the commands that will be used in this service, and that this services depends on the `db` service.
+
+Them to run the docker compose file, you can execute `docker-compose up`, and the command will create and start the containers.
+
+You can find the full example for docker compose in this [sample app](https://docs.docker.com/compose/django/).
