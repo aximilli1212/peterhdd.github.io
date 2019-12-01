@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: Http Request In Ionic
-description: In this guide we will explain what is http request and demonstrate how to do an http request in ionic. Explain what is rxjs, and observable in angular.
+description: In this guide we will explain what is http request and demonstrate how to do an http request in ionic with examples. Explain what is rxjs, and observable in angular.
 ids: 12
 category: Ionic
 ---
