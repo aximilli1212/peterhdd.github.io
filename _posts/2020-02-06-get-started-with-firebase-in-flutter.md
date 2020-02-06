@@ -105,7 +105,7 @@ dependencies:
     firebase_database: ^3.1.1
 ```
 
-and save by cliking CTRL + S, visual studio code will execute `flutter packages get` and add the plugin to your project. To save data to the realtime database, first we need to get an instance of the database and then we can use the set method to save the data:
+and save by clicking CTRL + S, visual studio code will execute `flutter packages get` and add the plugin to your project. To save data to the realtime database, first we need to get an instance of the database and then we can use the set method to save the data:
 
 ```dart
 class _MyHomePageState extends State<MyHomePage> {
