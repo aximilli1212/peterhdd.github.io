@@ -14,7 +14,7 @@ Well in this article I will explain how to integrate Firebase with Flutter, save
 
 **Note**: *Flutter is a hybrid framework for mobile applications, but for this article I’m only going to use it on Android device. Also I’m not going to go in depth about Flutter, the article is mostly about using Firebase realtime database in Flutter.*
 
-<img data-sizes="auto" class="lazy-loading" data-src="/assets/images/download.png" src="/assets/images/download.png" alt="ionic http" data-srcset="/assets/images/download.png 300w,
+<img data-sizes="auto" class="center lazy-loading" data-src="/assets/images/download.png" src="/assets/images/download.png" alt="ionic http" data-srcset="/assets/images/download.png 300w,
 /assets/images/download.png 600w,
 /assets/images/download.png 900w">
 
@@ -153,7 +153,7 @@ So first, we use the `StatefulWidget` since it is a widget that has a mutable st
 
 The `TextEditingController` will be used to retrieve the text written inside the TextField . Then, you need to call the method `reference()` that will return a `DatabaseReference` . After that, create a `RaisedButton` and use the `onPressed` property that will take a callback which will be called when the button is tapped or otherwise activated. Inside the callback, you can use the following code `ref.child(name).set(myController.text)`, this will create an attribute in the database with the value of the `TextField`.
 
-<img data-sizes="auto" class="lazy-loading" data-src="/assets/images/name.PNG" src="/assets/images/name.PNG" alt="ionic http" data-srcset="/assets/images/name.PNG 300w,
+<img data-sizes="auto" class="center lazy-loading" data-src="/assets/images/name.PNG" src="/assets/images/name.PNG" alt="ionic http" data-srcset="/assets/images/name.PNG 300w,
 /assets/images/name.PNG 600w,
 /assets/images/name.PNG 900w">
 
