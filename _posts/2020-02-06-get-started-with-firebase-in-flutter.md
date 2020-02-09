@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: Get Started with Firebase in Flutter
-description: In this guide we will explain how to integrate firebase in flutter, create and save data to firebase in flutter.
+description: In this guide we will explain how to integrate firebase in flutter, create and save data to firebase while using flutter.
 ids: 13
 category: Firebase
 ---
