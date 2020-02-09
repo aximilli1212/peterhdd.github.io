@@ -9,7 +9,8 @@ category: Firebase
 
 <p class="message"> 
 You started learning flutter and now you need a backend, you read about Firebase but didn't really understand how to use it.
-</br>
+<br>
+<br>
 Well in this article I will explain how to integrate Firebase with Flutter, save and retrieve data from the realtime database.
 </p>
 
