@@ -2,14 +2,13 @@
 layout: post
 comments: true
 title: Get Started with Firebase in Flutter
-description: In this guide we will explain how to integrate firebase in flutter, create and save data to firebase while using flutter.
+description: In this guide we will explain how to integrate firebase in flutter, create and retrieve data from firebase while using flutter.
 ids: 13
 category: Firebase
 ---
 
 <p class="message"> 
-<!-- You started learning flutter and now you need a backend, you read about Firebase but didn't really understand how to use it. -->
-You heard about a UI framework for creating mobile applications called Flutter, and started learning it but now you need a database and read about Firebase.
+You heard about a UI framework for creating mobile applications called Flutter, and started learning it but now you need a database and read about Firebase!
 <br>
 <br>
 Well in this article I will explain how to integrate Firebase with Flutter, save and retrieve data from the Firebase realtime database.
@@ -186,9 +185,9 @@ var retrievedName;
             Text(retrievedName ?? "name"),
 ```
 
-We can create a new `RaisedButton` and inside the `onPressed` callback, we can use the `once()` method to retrieve the data once. Since `once()` returns a `Future<DataSnapshot>` then it is [asynchronous](https://dart.dev/codelabs/async-await) and you can use the method `then()` which registers a callback to be called when this future completes. 
+We can create a new `RaisedButton` widget and inside the `onPressed` callback, we can use the `once()` method to retrieve the data once. Since `once()` returns a `Future<DataSnapshot>` then it is [asynchronous](https://dart.dev/codelabs/async-await) and you can use the method `then()` which registers a callback to be called when this future completes. 
 
-Since the data is of type `DataSnapshot` , then you can use the property `value` to retrieve the content of this `datasnapshot`. You can also use the property `key` to retrieve the current location of this `dataSnapshot`, so in this case it will retrun the attribute `Name`.
+Since the data is of type `DataSnapshot` , then you can use the property `value` to retrieve the content of this `datasnapshot`. You can also use the property `key` to retrieve the current location of this `dataSnapshot`, so in this case it will return the attribute `Name`.
 
 
 *I hope you enjoyed this Flutter/Firebase article, in the next article I will go more in depth about retrieving and saving different Firebase database structure and will use queries to retrieve data.*
