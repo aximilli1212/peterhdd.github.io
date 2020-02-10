@@ -8,10 +8,11 @@ category: Firebase
 ---
 
 <p class="message"> 
-You started learning flutter and now you need a backend, you read about Firebase but didn't really understand how to use it.
+<!-- You started learning flutter and now you need a backend, you read about Firebase but didn't really understand how to use it. -->
+You heard about a UI framework for creating mobile applications called Flutter, and started learning it but now you need a database and read about Firebase.
 <br>
 <br>
-Well in this article I will explain how to integrate Firebase with Flutter, save and retrieve data from the realtime database.
+Well in this article I will explain how to integrate Firebase with Flutter, save and retrieve data from the Firebase realtime database.
 </p>
 
 **Note**: *Flutter is a hybrid framework for mobile applications, but for this article I’m only going to use it on Android device. Also I’m not going to go in depth about Flutter, the article is mostly about using Firebase realtime database in Flutter.*
