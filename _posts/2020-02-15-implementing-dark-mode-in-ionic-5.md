@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: Implementing Dark Mode In Ionic 5
-description: Want to support both light mode and dark mode, well in this guide we will create a dark mode toggle using ionic 5.
+description: In this guide, we will use ionic 5 and create a switch to change between dark and light mode in the ionic application.
 ids: 14
 category: Ionic
 ---
