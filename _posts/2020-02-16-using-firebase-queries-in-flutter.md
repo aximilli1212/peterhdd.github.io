@@ -17,6 +17,21 @@ Since, we need to add a list of data to the firebase realtime database, then fir
 
 **Note:** If you did not setup firebase, please check the previous [tutorial](https://petercoding.com/firebase/2020/02/06/get-started-with-firebase-in-flutter/).
 
+<style>
+  .example_responsive { width: 300px; height: 250px; }
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- inside posts -->
+<ins class="adsbygoogle example_responsive"
+     style="display:block"
+     data-ad-client="ca-pub-8689548599050263"
+     data-ad-slot="2590272657"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 So, first to create a form you need to use the widget `Form()`. The reason why we use a `Form()` is because it contains validation which is different than just using normal `TextFields`. Let's take this step by step:
 
 ```dart
@@ -414,6 +429,16 @@ So first you need to order the data by something specific, in the `firebase_data
 
 **Note**: You cannot use two `orderBy..` methods in the same query.
 
+The method `orderBy..`, can be used with the following methods:
+
+`startAt`: Create a query constrained to only return child nodes with a value greater than or equal to the given value.
+
+`endAt`: Create a query constrained to only return child nodes with a value less than or equal to the given value.
+
+`limitToFirst`: Create a query with limit and anchor it to the start of the window.
+
+`limitToLast` : Create a query with limit and anchor it to the end of the window.
+
 Now, if you use the following query:
 
 ```dart
@@ -425,6 +450,8 @@ Then you will get only the nodes that have age equal to 4:
     /assets/images/equalto.jpg 600w,
     /assets/images/equalto.jpg 900w">
 
+------
+
 ```dart
 dbRef.orderByKey().equalTo("-M0FIuRBi5NT1VKsTbQt").once(),
 ```
@@ -434,7 +461,7 @@ If you use the above query, then you will retrieve the node that contains the ke
     /assets/images/orderbykey.jpg 600w,
     /assets/images/orderbykey.jpg 900w">
 
-If you use the following query:
+----
 
 ```dart
 dbRef.orderByChild("name").startAt("s").once()
@@ -448,5 +475,70 @@ Then you will retrieve all the data that has a node `name` with first letter equ
     "type" : "Cats"
   },
 ```
+-----
+
+```dart
+ref.orderByChild("name").startAt("bun").endAt("bun" + "\uf8ff").once()
+```
+or
+
+```dart
+ref.orderByChild("name").startAt("bun").endAt("bun" + "\uf8ff").limitToFirst(1).once()
+```
+`limitToFirst` will only return the first element that satisfies the condition above.
+
+Here its like you are using SQL like. The character `\uf8ff` used in the query is a very high code point in the Unicode range. Because it is after most regular characters in Unicode, the query matches all values that start with "bun".
+
+In this case, it will return the following:
+
+```json
+ "-M0FJHoCBd304XwLc_c-" : {
+      "age" : "4",
+      "name" : "bun",
+      "type" : "Rabbits"
+    },
+```
+-----
+
+```dart
+ref.orderByChild("name").endAt("n").once()
+```
+So here, it is like you are saying find all pets whose names come before `p` lexicographically. In this case, it will return  the following:
+
+```json
+  "-M0FIuRBi5NT1VKsTbQt" : {
+    "age" : "1",
+    "name" : "kitty",
+    "type" : "Cats"
+  },
+  "-M0FJHoCBd304XwLc_c-" : {
+    "age" : "4",
+    "name" : "bun",
+    "type" : "Rabbits"
+  },
+  "-M0FJLC6he0Qh9fVY9LV" : {
+    "age" : "7",
+    "name" : "max",
+    "type" : "Dogs"
+  }
+```
+```dart
+ref.orderByChild("name").startAt("la").once()
+```
+So, here we use `startAt("la")`, remember `startAt` returns child nodes with a value greater than or equal to the given value. So in this case, it will return the following:
+
+```json
+"-M0FJ-WJXYDS-TPehYzV" : {
+    "age" : "4",
+    "name" : "shadow",
+    "type" : "Cats"
+  },
+    "-M0FJLC6he0Qh9fVY9LV" : {
+    "age" : "7",
+    "name" : "max",
+    "type" : "Dogs"
+  }
+```
+Since both `s` and `m` are alphabatically higher than `l`.
 
 *I hope you enjoyed this Flutter/Firebase article, in the next article I will use firebase authentication with realtime database*
