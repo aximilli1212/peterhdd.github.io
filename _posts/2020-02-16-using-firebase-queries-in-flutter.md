@@ -326,7 +326,7 @@ class _RegisterPetState extends State<RegisterPet> {
 ```
 The result:
 
-<img data-sizes="auto" class="lazy-loading" src="/assets/images/form.jpg" data-src="/assets/images/form.jpg" alt="flutter form" data-srcset="/assets/images/form.jpg 300w,
+<img data-sizes="auto" width="300" class="lazy-loading" src="/assets/images/form.jpg" data-src="/assets/images/form.jpg" alt="flutter form" data-srcset="/assets/images/form.jpg 300w,
     /assets/images/form.jpg 600w,
     /assets/images/form.jpg 900w">
 
@@ -350,7 +350,7 @@ dbRef.push().set({
 ```
 So here `dbRef` refers to the node `pets`, the `push()` method will create a random id, and the `set` method will contain the data from the form. The `then()` callback will execute after the data is added in the Firebase database, and you can use the `catchError` which will handle errors emitted by this Future. (This is the asynchronous equivalent of a "catch" block). The firebase realtime database:
 
-<img data-sizes="auto" class="lazy-loading" src="/assets/images/firebaseconsole.png" data-src="/assets/images/firebaseconsole.png" alt="flutter form" data-srcset="/assets/images/firebaseconsole.png 300w,
+<img data-sizes="auto"  class="lazy-loading" src="/assets/images/firebaseconsole.png" data-src="/assets/images/firebaseconsole.png" alt="flutter form" data-srcset="/assets/images/firebaseconsole.png 300w,
     /assets/images/firebaseconsole.png 600w,
     /assets/images/firebaseconsole.png 900w">
 
@@ -395,7 +395,7 @@ FutureBuilder(
 We assign `dbRef.once()` which returns a `Future<DataSnapshot>` to the `future` property, this will retrieve the data only once. Since this is asychronous, then first the widget `CirculareProgressIndicator` will be executed, then if the `snapshot` has data, the code inside the if block will get executed. Inside the `if` block, we use the property `value` of type `DataSnapshot` that will retrieve the whole returned data. Then using `forEach`, we can iterate and add the property `values` to the list. After that, we declare a listview using `ListView.builder` constructor, we also use the `card` widget to be used on the list.
 
 
-<img data-sizes="auto" class="lazy-loading" src="/assets/images/listview.jpg" data-src="/assets/images/listview.jpg" alt="flutter form" data-srcset="/assets/images/listview.jpg 300w,
+<img data-sizes="auto" width="300" class="lazy-loading" src="/assets/images/listview.jpg" data-src="/assets/images/listview.jpg" alt="flutter form" data-srcset="/assets/images/listview.jpg 300w,
     /assets/images/listview.jpg 600w,
     /assets/images/listview.jpg 900w">
 
@@ -446,7 +446,7 @@ dbRef.orderByChild("age").equalTo("4").once(),
 ```
 Then you will get only the nodes that have age equal to 4:
 
-<img data-sizes="auto" class="lazy-loading" src="/assets/images/equalto.jpg" data-src="/assets/images/equalto.jpg" alt="flutter firebase" data-srcset="/assets/images/equalto.jpg 300w,
+<img data-sizes="auto" width="300" class="lazy-loading" src="/assets/images/equalto.jpg" data-src="/assets/images/equalto.jpg" alt="flutter firebase" data-srcset="/assets/images/equalto.jpg 300w,
     /assets/images/equalto.jpg 600w,
     /assets/images/equalto.jpg 900w">
 
@@ -457,7 +457,7 @@ dbRef.orderByKey().equalTo("-M0FIuRBi5NT1VKsTbQt").once(),
 ```
 If you use the above query, then you will retrieve the node that contains the key `-M0FIuRBi5NT1VKsTbQt`
 
-<img data-sizes="auto" class="lazy-loading" src="/assets/images/orderbykey.jpg" data-src="/assets/images/orderbykey.jpg" alt="flutter firebase" data-srcset="/assets/images/orderbykey.jpg 300w,
+<img data-sizes="auto" width="300" class="lazy-loading" src="/assets/images/orderbykey.jpg" data-src="/assets/images/orderbykey.jpg" alt="flutter firebase" data-srcset="/assets/images/orderbykey.jpg 300w,
     /assets/images/orderbykey.jpg 600w,
     /assets/images/orderbykey.jpg 900w">
 
