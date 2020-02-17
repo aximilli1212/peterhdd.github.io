@@ -466,7 +466,7 @@ If you use the above query, then you will retrieve the node that contains the ke
 ```dart
 dbRef.orderByChild("name").startAt("s").once()
 ```
-Then you will retrieve all the data that has a node `name` with first letter equal to `s`:
+Then you will retrieve all the data that has a node `name` with first letter equal to `s` or greater than `s`:
 
 ```json
   "-M0FJ-WJXYDS-TPehYzV" : {
@@ -503,7 +503,7 @@ In this case, it will return the following:
 ```dart
 ref.orderByChild("name").endAt("n").once()
 ```
-So here, it is like you are saying find all pets whose names come before `p` lexicographically. In this case, it will return  the following:
+So here, it is like you are saying find all pets whose names come before `n` lexicographically. In this case, it will return  the following:
 
 ```json
   "-M0FIuRBi5NT1VKsTbQt" : {
@@ -522,6 +522,8 @@ So here, it is like you are saying find all pets whose names come before `p` lex
     "type" : "Dogs"
   }
 ```
+-----
+
 ```dart
 ref.orderByChild("name").startAt("la").once()
 ```
@@ -539,6 +541,6 @@ So, here we use `startAt("la")`, remember `startAt` returns child nodes with a v
     "type" : "Dogs"
   }
 ```
-Since both `s` and `m` are alphabatically higher than `l`.
+Since both `s` and `m` are alphabetically higher than `l`.
 
 *I hope you enjoyed this Flutter/Firebase article, in the next article I will use firebase authentication with realtime database*
