@@ -427,7 +427,7 @@ So first you need to order the data by something specific, in the `firebase_data
 
 `orderByKey`: Generate a view of the data sorted by key, intended to be used in combination with `startAt`, `endAt`, or `equalTo`.
 
-**Note**: You cannot use two `orderBy..` methods in the same query.
+**Note**: You cannot use two `orderBy..` methods in the same query. Also the firebase queries are returning in ascending order(if they are numerical), and if they are Strings then they are sorted lexicographically in ascending order. Since it returns in ascending order, so if you use `limitToFirst(2)`, then the smallest 2 numbers of a specific child will be returned, while `limitToLast(2)` will return the largest 2 numbers of a specific child.
 
 The method `orderBy..`, can be used with the following methods:
 
