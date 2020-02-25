@@ -41,7 +41,7 @@ For the purpose of this tutorial, the above dependencies were added. The `fireba
 
 ## Creating A Splash Screen
 
-First to easily creat a splash screen, you can use the dependency `splashscreen` and just use it in the code. Inside the `main.dart`, create a `statelesswidget`:
+First to easily create a splash screen, you can use the dependency `splashscreen` and just use it in the code. Inside the `main.dart`, create a `statelesswidget`:
 
 ```dart
 void main() => runApp(MyApp());
@@ -117,7 +117,7 @@ class _IntroScreenState extends State<IntroScreen> {
 ```
 As, you can see the `SplashScreen` class will create a splash screen for you. Since, we are using `Image.asset`, then you need to add an image inside the `pubspec.yaml` file so it can appear in the splash screen.
 
-The main reason we use a splash screen is inside the lifecycle method `initState`. Inside the `initState`, we are retrieving the firebase currently logged in user using the method `currentUser()`, and since `currentUser()` returns a `Future<FirebaseUser>` then we can add the method `then()` that will call the callback function after the asynchronous method is completed. This helps because if there is no user logged in, then we navigate to the `SignUp` page, else we go immediately to the `Home` page. This way when the user didn't log out in the previous session then they don't need to login again to the application.
+The main reason we use a splash screen, is inside the lifecycle method `initState`. Inside the `initState`, we are retrieving the firebase currently logged in user using the method `currentUser()`, and since `currentUser()` returns a `Future<FirebaseUser>` then we can add the method `then()` that will call the callback function after the asynchronous method is completed. This helps because if there is no user logged in, then we navigate to the `SignUp` page, else we go immediately to the `Home` page. This way when the user didn't log out in the previous session then they don't need to login again to the application.
 
 ## Creating Different Sign Up Buttons
 
@@ -187,6 +187,8 @@ To create the above interface you need to do the following:
           ]),
         ))
 ```
+So we use a `Column` widget and the `children` property, and inside we use the class `SignInButton` which will create different custom sign in buttons that are from the dependency `flutter_signin_button`.
+
 In this tutorial, we will only use the email method. The `Log in Using Email` will navigate to the `EmailLogIn` page while the `Sign up with Email` will navigate to the `SignUp` page.
 
 ## Creating The Email Sign Up Form
@@ -203,7 +205,7 @@ Inside this page, we need to create a form that will navigate to the Home page w
   TextEditingController ageController = TextEditingController();
 ```
 
-The `GlobalKey` is used to identify this form, we also create a reference to the child `Users` and we create the `TextEditingController` that will be binded to the `textformfield`.
+The `GlobalKey` is used to identify this form, we also create a reference to the child `Users` and we create the `TextEditingController` that will be attached to the `textformfield`.
 Then inside the `build` method we create the `Form`:
 
 ```dart
