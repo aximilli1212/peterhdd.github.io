@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: Using Firebase Authentication in Flutter
-description: In this guide, we will use the email and password firebase method to login to the flutter application and manage the logged in user.
+description: In this guide, we will use the email and password firebase authentication method to login to the flutter application and manage the logged in user.
 ids: 16
 category: Firebase
 ---
@@ -24,6 +24,22 @@ First to be able to use the email/password firebase authentication method in the
 So, after enabling it, you can now use firebase authentication in your project!
 
 **Note:** If you did not setup firebase, please check the previous [tutorial](https://petercoding.com/firebase/2020/02/06/get-started-with-firebase-in-flutter/). You can also check the other firebase tutorials with flutter [here](https://petercoding.com/categories/).
+
+<style>
+  .example_responsive { width: 300px; height: 250px; }
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- inside posts -->
+<ins class="adsbygoogle example_responsive"
+     style="display:block"
+     data-ad-client="ca-pub-8689548599050263"
+     data-ad-slot="2590272657"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 
 ### Adding the Firebase Auth To Flutter
 
