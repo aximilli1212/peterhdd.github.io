@@ -13,7 +13,7 @@ ads: ca-pub-8689548599050263
 author:
   name:           'Peter Haddad'
   paginate:         5
-  twitter:    'peter_haddad3'
+  twitter:    'peterndev'
   stackoverflow: '7015400'
   github: 'peterHdd'
   email: 'peterhd3412@gmail.com'
@@ -21,7 +21,7 @@ author:
 social:
   name: Peter Haddad
   links:
-    - https://twitter.com/peter_haddad3
+    - https://twitter.com/peterndev
     - https://github.com/peterHdd
     - https://stackoverflow.com/users/7015400
  
