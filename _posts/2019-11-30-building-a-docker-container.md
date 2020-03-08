@@ -14,12 +14,11 @@ Docker is a software containerization platform, it allows developers to create, 
 ## What Is Docker?
 
 Docker is a software containerization platform, by using docker developers will be able to build, share and run applications with containers. Containerization is becoming very popular and that's because containers are portable which enable them to run on any operating system, they are lightweight since containers share the host kernel thus are more efficient than virtual machines, also they are flexible which means any complex application can be containerized.
-
-<style>
+<!-- inside posts -->
+<!-- <style>
   .example_responsive { width: 300px; height: 250px; }
 </style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- inside posts -->
 <ins class="adsbygoogle example_responsive"
      style="display:block"
      data-ad-client="ca-pub-8689548599050263"
@@ -28,7 +27,7 @@ Docker is a software containerization platform, by using docker developers will 
      data-full-width-responsive="true"></ins>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+</script> -->
 
 Docker is usually compared with virtual machine, you can see in the image below the difference between docker and VM:
 

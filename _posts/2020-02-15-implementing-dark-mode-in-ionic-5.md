@@ -23,12 +23,12 @@ npm i @ionic/angular@latest --save --save-exact
 
 The above is specifically for Ionic applications that are using Angular. Since starting with version Ionic 4, other frameworks like Vue and React were added also. Then you can start using Ionic 5 features in the project.
 
-<style>
+<!-- <style>
   .example_responsive { width: 300px; height: 250px; }
 </style>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
 <!-- inside posts -->
-<ins class="adsbygoogle example_responsive"
+<!-- <ins class="adsbygoogle example_responsive"
      style="display:block"
      data-ad-client="ca-pub-8689548599050263"
      data-ad-slot="2590272657"
@@ -36,7 +36,7 @@ The above is specifically for Ionic applications that are using Angular. Since s
      data-full-width-responsive="true"></ins>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+</script> -->
 
 
 ### Creating Ionic 5 Project

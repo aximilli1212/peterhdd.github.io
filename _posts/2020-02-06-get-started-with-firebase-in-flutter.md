@@ -27,12 +27,11 @@ So first, you need to have Flutter already installed in your operating system. I
 ```bash
 flutter create firebase_with_flutter
 ```
-
-<style>
+<!-- inside posts -->
+<!-- <style>
   .example_responsive { width: 300px; height: 250px; }
 </style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- inside posts -->
 <ins class="adsbygoogle example_responsive"
      style="display:block"
      data-ad-client="ca-pub-8689548599050263"
@@ -41,7 +40,7 @@ flutter create firebase_with_flutter
      data-full-width-responsive="true"></ins>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+</script> -->
 
 
 This command will create a new project with the name **firebase_with_flutter**. Then to go to the directory of the project, execute the following:

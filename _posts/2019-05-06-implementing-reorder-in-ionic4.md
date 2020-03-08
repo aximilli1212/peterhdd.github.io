@@ -17,11 +17,11 @@ The ion-reorder component will allow you to drag and drop items, thus changing t
 ---
 
 Ionic provides a reorder component called `<ion-reorder>`, that will allow users to changes the order of the list. The `<ion-reorder>` needs to be used inside the `<ion-reorder-group>`, which will act as a wrapper for the items inside `<ion-reorder>`.
-<style>
+<!-- inside posts -->
+<!-- <style>
   .example_responsive { width: 300px; height: 250px; }
 </style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- inside posts -->
 <ins class="adsbygoogle example_responsive"
      style="display:block"
      data-ad-client="ca-pub-8689548599050263"
@@ -30,7 +30,7 @@ Ionic provides a reorder component called `<ion-reorder>`, that will allow users
      data-full-width-responsive="true"></ins>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+</script> -->
 First, we need to create an array to add items in the list, in this tutorial I used an array containing different animal names.
 
 Example:

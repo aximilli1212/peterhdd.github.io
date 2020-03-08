@@ -17,12 +17,12 @@ Since, we need to add a list of data to the firebase realtime database, then fir
 
 **Note:** If you did not setup firebase, please check the previous [tutorial](https://petercoding.com/firebase/2020/02/06/get-started-with-firebase-in-flutter/).
 
-<style>
+<!-- <style>
   .example_responsive { width: 300px; height: 250px; }
 </style>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
 <!-- inside posts -->
-<ins class="adsbygoogle example_responsive"
+<!-- <ins class="adsbygoogle example_responsive"
      style="display:block"
      data-ad-client="ca-pub-8689548599050263"
      data-ad-slot="2590272657"
@@ -30,7 +30,7 @@ Since, we need to add a list of data to the firebase realtime database, then fir
      data-full-width-responsive="true"></ins>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+</script> -->
 
 So, first to create a form you need to use the widget `Form()`. The reason why we use a `Form()` is because it contains validation which is different than just using normal `TextFields`. Let's take this step by step:
 
