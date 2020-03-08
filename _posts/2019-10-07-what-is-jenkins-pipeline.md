@@ -21,11 +21,11 @@ So, first we create a *new item*, give the project a name and choose pipeline pr
     /assets/images/pipelineproj.jpg 600w,
     /assets/images/pipelineproj.jpg 900w">
     
-<style>
+<!-- inside posts -->
+<!-- <style>
   .example_responsive { width: 300px; height: 250px; }
 </style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- inside posts -->
 <ins class="adsbygoogle example_responsive"
      style="display:block"
      data-ad-client="ca-pub-8689548599050263"
@@ -34,7 +34,7 @@ So, first we create a *new item*, give the project a name and choose pipeline pr
      data-full-width-responsive="true"></ins>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+</script> -->
 
 ### Adding Groovy Code
 

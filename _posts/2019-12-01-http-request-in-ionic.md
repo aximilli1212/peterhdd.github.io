@@ -21,9 +21,9 @@ Http has many request methods that are used to perform a desired action on a res
 - `POST`, which is used to submit data on the server
 - `DELETE`, which is used to delete the specified resource
 - `PUT`, which is used to replace the specified resource
-- `OPTIONS`, which is used in preflight requests 
-<!-- inside posts -->
-<!-- <style>
+- `OPTIONS`, which is used in preflight requests
+<div> 
+ <!-- <style>
   .example_responsive { width: 300px; height: 250px; }
 </style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -35,7 +35,9 @@ Http has many request methods that are used to perform a desired action on a res
      data-full-width-responsive="true"></ins>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
-</script> -->
+</script>  -->
+<!-- inside posts -->
+</div>
 
 ## Types of Http Request
 

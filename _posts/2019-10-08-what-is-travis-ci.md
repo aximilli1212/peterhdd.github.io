@@ -18,12 +18,11 @@ Travis CI is a continuous integration service that is used mostly in Github. It 
 <i>
 Note: This tutorial is mostly an explanation how to use Travis CI, if you want to learn what continuous integration and Continuous Delivery are, then check the tutorial before <a href="https://petercoding.com/devops/2019/07/15/what-does-jenkins-do/"> What Does Jenkins Do?</a>
 </i>
-
-<style>
+<!-- inside posts -->
+<!-- <style>
   .example_responsive { width: 300px; height: 250px; }
 </style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- inside posts -->
 <ins class="adsbygoogle example_responsive"
      style="display:block"
      data-ad-client="ca-pub-8689548599050263"
@@ -32,7 +31,7 @@ Note: This tutorial is mostly an explanation how to use Travis CI, if you want t
      data-full-width-responsive="true"></ins>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+</script> -->
 
 ## Setup And Build Travis CI
 
