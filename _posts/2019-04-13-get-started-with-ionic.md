@@ -21,11 +21,11 @@ Ionic utilizes the command line, to be able to install it you need to open the t
     npm install -g ionic cordova
 
 **Note**: This will install both ionic framework and the cordova CLI. You also need to install node before being able to execute this command. You can find information about node in the following link [node install](https://www.npmjs.com/get-npm).
-<style>
+<!-- inside posts -->
+<!-- <style>
   .example_responsive { width: 300px; height: 250px; }
 </style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- inside posts -->
 <ins class="adsbygoogle example_responsive"
      style="display:block"
      data-ad-client="ca-pub-8689548599050263"
@@ -34,7 +34,7 @@ Ionic utilizes the command line, to be able to install it you need to open the t
      data-full-width-responsive="true"></ins>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+</script> -->
 
 After that you can execute the following command to start a project:
 
