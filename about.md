@@ -34,7 +34,7 @@ Some recommended books to read:
 <div class="article">
 To contact him, just fill in your details using this form.
 </div>
-<form action="mailto:peterhd3412@gmail.com" method="post" enctype="text/plain">
+<form action="mailto:peterhaddadn@gmail.com" method="post" enctype="text/plain">
   <div class="form-group">
     <label for="exampleInputPassword1">Name<span class="text-danger"> *</span></label>
     <input type="text" name="name" class="form-control" id="exampleInputPassword1" placeholder="Name" required>
