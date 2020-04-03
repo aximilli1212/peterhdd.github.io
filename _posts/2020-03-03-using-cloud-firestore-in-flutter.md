@@ -403,7 +403,7 @@ I/flutter (15013): {characteristics: [loving, loyal], address: {country: USA, ci
 
 ## Perform Queries In Firestore
 
-Cloud Firestore uses index to improve the performance of retrieving the data from the database. If there is no index then the database must go through each collection to retrieve the data which will make the performance bad. There are two index type single index which are automatically indexed by Firestore and composite index which you need to manually create. Therefore, you have to create an index whenever you are using more than one `where()` in a single query. 
+Cloud Firestore uses index to improve the performance of retrieving the data from the database. If there is no index then the database must go through each collection to retrieve the data which will make the performance bad. There are two index type single index which are automatically indexed by Firestore and composite index which you need to manually create. Therefore, you have to create an index whenever you are using more than one `where()` in a single query or if you are using one `where()` and `orderBy()` so basically when it is two different fields.
 
 *Note: You can only have 200 composite index*
 
