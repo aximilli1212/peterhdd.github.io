@@ -8,7 +8,7 @@ category: Firebase
 ---
 
 <p class="message"> 
-In this article, we will add Cloud Firestore to a Flutter application, perform different read and write operation and use some queries to retrieve data.
+In this article, we will add Cloud Firestore to a Flutter application, perform different read, write operation and use some queries to retrieve data.
 </p>
 
 >This is the fourth article related to Firebase in Flutter, you can check the previous articles in the below links:
@@ -40,7 +40,7 @@ As I said before, to check how to create a flutter project and add the `google-s
 dependencies:
   cloud_firestore: ^0.13.4+2
 ```
-Click <kbd>CTRL</kbd> + <kbd>S</kbd> to save, and you have sucessfully added Cloud Firestore to your Flutter application!
+Click <kbd>CTRL</kbd> + <kbd>S</kbd> to save, and you have successfully added Cloud Firestore to your Flutter application!
 
 ## Adding Data To Firestore
 
@@ -517,7 +517,7 @@ This will return every document where `countryName` is either `italy` or `lebano
 
 ------------
 
-You can also chain `where()` queries, but if you are using `isEqualTo` with any other range comparision or with `arrayContains`, then you need to create a composite index. Example:
+You can also chain `where()` queries, but if you are using `isEqualTo` with any other range comparison or with `arrayContains`, then you need to create a composite index. Example:
 
 ```dart
 void _onPressed() async {
