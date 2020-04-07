@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: Using Cloud Firestore in Flutter
-description: In this guide, we will understand what is cloud firestore, read, write data and use queries with firestore in flutter.
+description: In this guide, we will understand what is cloud firestore which is another database from firebase, read, write data and use queries with firestore in flutter.
 ids: 17
 category: Firebase
 ---
