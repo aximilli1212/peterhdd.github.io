@@ -34,6 +34,7 @@ function prefersColorTest(systemInitiatedDark) {
 }
 systemInitiatedDark.addListener(prefersColorTest);
 
+
 function modeSwitcher() {
     let theme = sessionStorage.getItem('theme');
     console.log(theme);
