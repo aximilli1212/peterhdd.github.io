@@ -4,13 +4,13 @@ layout: default
 {% assign trans = site.data.values[site.lan] %}
 <div class="well article">
     <!-- {{page.ad}} -->
-    <!-- <style>
+    <style>
         .example_responsive_1 { width: 320px; height: 100px; }
         @media(min-width: 500px) { .example_responsive_1 { width: 468px; height: 60px; } }
         @media(min-width: 800px) { .example_responsive_1 { width: 728px; height: 90px; } }
-    </style> -->
+    </style>
     <!-- top of the page -->
-<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle example_responsive_1"
      style="display:block"
      data-ad-client="ca-pub-8689548599050263"
@@ -19,7 +19,7 @@ layout: default
      data-full-width-responsive="true"></ins>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
-</script> -->
+</script>
         <h1><a href="{{ site.url}}{{ page.url }}">{{ page.title }}</a></h1>
         <span class="post-date">
             {% assign date_format = site.date_format.title %}
@@ -100,7 +100,7 @@ layout: default
 
     </div>
     {% include comments.html %}
-    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <ins class="adsbygoogle"
          style="display:block"
          data-ad-format="fluid"
@@ -109,7 +109,7 @@ layout: default
          data-ad-slot="9802386561"></ins>
     <script>
          (adsbygoogle = window.adsbygoogle || []).push({});
-    </script> -->
+    </script>
     <br>
     {% include subscribe.html %}
 </div>

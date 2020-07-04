@@ -19,6 +19,21 @@ In this article, we will add Cloud Firestore to a Flutter application, perform d
 
 To know how to download the `google-service.json` file, you can check the first article in the above list. In the last two articles, I created a form using Flutter performed queries for the realtime database and authenticated users with Firebase, but in this article I'm not going to create a form, its mostly going to be code snippet related to Firestore and explaining each one.
 
+<!-- inside posts -->
+<style>
+  .example_responsive { width: 300px; height: 250px; }
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle example_responsive"
+     style="display:block"
+     data-ad-client="ca-pub-8689548599050263"
+     data-ad-slot="2590272657"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ## Introduction
 
 ### What is Cloud Firestore?

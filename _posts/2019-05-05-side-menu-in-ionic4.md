@@ -34,11 +34,11 @@ ionic generate page Chat
 
 Now that we have 3 pages, we can start creating the side menu!
 <!-- inside posts -->
-<!-- <style>
+<style>
   .example_responsive { width: 300px; height: 250px; }
 </style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
-<!-- <ins class="adsbygoogle example_responsive"
+<ins class="adsbygoogle example_responsive"
      style="display:block"
      data-ad-client="ca-pub-8689548599050263"
      data-ad-slot="2590272657"
@@ -46,7 +46,7 @@ Now that we have 3 pages, we can start creating the side menu!
      data-full-width-responsive="true"></ins>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
-</script> -->
+</script>
 
 ## Creating the side menu
 ---
