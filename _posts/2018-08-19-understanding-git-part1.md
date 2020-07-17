@@ -55,15 +55,16 @@ This will create a new hidden file called `.git` inside the folder `gitExample`,
 
 ## Adding files to the repository
 
-First create a file inside the folder `newfile.txt` and write some text inside of it. Then you need to add this file to the staging area, to be able to commit it later on. You can also use `git status` that will inform you in which branch you currently reside in and if you have any untracked files.
+First create a file inside the folder `newfile.txt` and write some text inside of it. Then you need to add this file to the staging area(index), to be able to commit it later on. You can also use `git status` that will inform you in which branch you currently reside in and if you have any untracked files.
 
 ## Git Bash:
 ```bash
 git add newfile.txt #tracks the file and adds it to the staging area
-git commit -m "initial commit" #adds tracked files to repo
+git commit -m "initial commit" #adds tracked files to the local repo
 ```
-   
+**Note:** If you want to add all files in the folder to the staging area then use `git add -A` (the option -A)
 
+So as you can see `git add` adds the files to the staging area or index and then `git commit` adds the files to the local repository.
 
 If you did a mistake you can execute `git reset newfile.txt` and it will remove the staged file from the local repository. If you want to add multiple files then do the following `git add <file-name-1> <file-name-2> <file-name-3>` or if you want to add a file then do `git add 'fileName/'`.
 
@@ -101,7 +102,12 @@ Here you need to click on *Push* and then add the remote url in the *Arbitrary L
 
 ## Pull the Changes
 
-Now if any changes were added to the file in the remote repository, then you need to pull first and then push your local changes to the repository. `git pull` does a `git fetch` followed by a `git merge`.
+Now if any changes were added to the file in the remote repository, then you need to pull first and then push your local changes to the repository. `git pull` does a `git fetch` followed by a `git merge`. Basically `git fetch` will fetch all the commits from the remote repository but it will not merge them with your local branch. After doing `git fetch` you can execute `git status` to see if your branch is up to date with the remote branch. You can also execute `git log --all` to see the latest commits and the authors or `git show origin/master` to see the latest changes in the commits done.
+
+**Note**:
+- `origin`: is the remote branch
+- `master`: is the local branch
+- `origin/master`: is a representation or a pointer to the remote branch, basically it is a local copy of the branch `master` in the remote `origin`.
 
 ## Git Bash
  ```bash 
