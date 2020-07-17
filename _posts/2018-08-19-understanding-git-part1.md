@@ -102,12 +102,14 @@ Here you need to click on *Push* and then add the remote url in the *Arbitrary L
 
 ## Pull the Changes
 
-Now if any changes were added to the file in the remote repository, then you need to pull first and then push your local changes to the repository. `git pull` does a `git fetch` followed by a `git merge`. Basically `git fetch` will fetch all the commits from the remote repository but it will not merge them with your local branch. After doing `git fetch` you can execute `git status` to see if your branch is up to date with the remote branch. You can also execute `git log --all` to see the latest commits and the authors or `git show origin/master` to see the latest changes in the commits done.
+Now if any changes were added to the file in the remote repository, then you need to pull first and then push your local changes to the repository. `git pull` does a `git fetch origin master` followed by a `git merge origin/master`. Basically `git fetch` will fetch all the commits from the remote repository but it will not merge them with your local branch. After doing `git fetch` you can execute `git status` to see if your branch is up to date with the remote branch. You can also execute `git log --all` to see the latest commits and the authors or `git show origin/master` to see the latest changes in the commits done.
 
 **Note**:
-- `origin`: is the remote branch
-- `master`: is the local branch
+- `origin`: is the remote branch.
+- `master`: is the local branch.
 - `origin/master`: is a representation or a pointer to the remote branch, basically it is a local copy of the branch `master` in the remote `origin`.
+- `git fetch origin master` : fetches changes from origin to master (local branch) but does not merge, it creates a local copy called `origin/master`
+- `git merge origin/master` : merges the changes that were fetched.
 
 ## Git Bash
  ```bash 
@@ -144,6 +146,34 @@ Now if you execute `git branch -a`, you will get the following output:
 ![git clone](/assets/images/gitclone.jpg)
 
 To clone a repository, simply click on *Clone new repository*, the Source location field should contain the remote url and the target directory should contain a folder.
+
+## Merge Conflicts
+
+So, let's say someone in the team added their changes to the staging area, and then commited to their local repository and pushed those changes to the remote repository. But both you and the other developer are working on the same file, and if you have done some changes on the file but didnt push you will get some problems.. so let's see what will happen.
+
+First, you do:
+
+```
+git fetch origin master
+```
+
+As I said before this will fetch the changes done but it will not merge. Now if you do `git status`, you will get the following:
+
+<img class="lazy-loading" data-sizes="auto" src="/assets/images/gitstatus.png" width="400" data-src="/assets/images/gitstatus.png" alt="git status started" data-srcset="/assets/images/gitstatus.png 300w,
+    /assets/images/gitstatus.png 600w,
+    /assets/images/gitstatus.png 900w">
+
+So, as you can see I modified the file *understading-git-part1*, but the changes are not staged. But before staging, first we executed `git fetch origin master`, now we have to do `git merge origin/master` to add the changes to our local repository. So if we execute that we get the following:
+
+```
+error: Your local changes to the following files would be overwritten by merge:
+	_posts/2018-08-19-understanding-git-part1.md
+Please commit your changes or stash them before you merge.
+Aborting
+```
+Unfortunately `git` is not able to merge the changes, because I have changed the content of this file and the remote repository contains some changes also.
+
+
 
 ## Recommended Books
 ----
