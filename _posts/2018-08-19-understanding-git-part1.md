@@ -173,6 +173,13 @@ Aborting
 ```
 Unfortunately `git` is not able to merge the changes, because I have changed the content of this file and the remote repository contains some changes also.
 
+So, now if I want my changes that are not staged to be in the remote repository and I want to be able to merge the changes in the remote repository to my local repository, I have to do the following:
+
+```
+git add <file_name>
+git commit -m "my changes"
+```
+
 
 
 ## Recommended Books
