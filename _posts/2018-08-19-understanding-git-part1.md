@@ -175,17 +175,44 @@ Unfortunately `git` is not able to merge the changes, because I have changed the
 
 So, now if I want my changes that are not staged to be in the remote repository and I want to be able to merge the changes in the remote repository to my local repository, I have to do the following:
 
-```
+```bash
 git add <file_name>
 git commit -m "my changes"
 ```
 
 Now my changes are inside the local repository, if I execute:
 
-```
+```bash
 git merge origin/master ## or git pull origin master
 ```
-I will have a merge conflict, I can fix the conflict by opening any IDE like vscode, merging the changes from the repository to my file, keeping my changes and then I can do `git push origin master`.
+I will have a merge conflict, I can fix the conflict by opening an IDE or editor like vscode, merging the changes from the repository to my file, keeping my local changes and then I can do `git push origin master` to send my file with changes to the repository.
+
+------
+
+Second way to solve the following error:
+
+```
+error: Your local changes to the following files would be overwritten by merge.
+```
+
+is to execute `git reset --hard` and then `git pull origin master`, but note **git reset will override all your local changes**, so basically all your work will be gone, you can do `git reset --hard` when you just want the changes in the repository and don't want your local changes.
+
+----- 
+
+Third way is to `stash` your changes, so basically this will save your uncommited changes in a `stash`, removing all your changes from the repository but keeping them hidden. So after you do `git fetch` and `git merge` and get the error, you can then do:
+```bash
+ git stash
+ git pull
+ git stash pop
+ ```
+
+ After doing `git pull` the changes will be added to your local repository and then when you do `git stash pop`, git will add your saved changes back to the working tree which may lead to a merge conflict, if you click save on vscode, you will get the following:
+
+ <img class="lazy-loading" data-sizes="auto" src="/assets/images/mergeconflict.png" width="400" data-src="/assets/images/mergeconflict.png" alt="git status started" data-srcset="/assets/images/mergeconflict.png 300w,
+    /assets/images/mergeconflict.png 600w,
+    /assets/images/mergeconflict.png 900w">
+
+Then you have to click *compare*, add the changes, and commit/push. Usually `git stash` is used when you want to hide your changes but don't want to commit, if you actually want to commit then it's better to just use the first way specified in this article. Also in `git stash` you can either `pop` or `apply`. `git stash pop` will throw away the stash after applying it, whereas `git stash apply` leaves it in the stash list for possible later reuse.
 
 
 
