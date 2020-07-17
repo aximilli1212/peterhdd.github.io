@@ -113,6 +113,8 @@ Extra information about Git, that may help you in your daily life.
 
 * Git searches for the email and password inside the `config` file in repository or inside the `gitconfig` file in the home directory. To set the username and email in the `gitconfig` file then use the `--global` option.
 
+* `git reflog` will show you the list commits you have done in all the branches, each commit will have a `HEAD` with an index that refers to the commit you have done.
+
 * If you want to contribute in open source project:
 1. First you need to fork the project 
 2. Do some changes

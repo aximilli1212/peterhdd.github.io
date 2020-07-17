@@ -195,7 +195,7 @@ Second way to solve the following error:
 error: Your local changes to the following files would be overwritten by merge.
 ```
 
-is to execute `git reset --hard` and then `git pull origin master`, but note **git reset will override all your local changes**, so basically all your work will be gone, you can do `git reset --hard` when you just want the changes in the repository and don't want your local changes.
+is to execute `git reset --hard` and then `git pull origin master`, but note **git reset will override all your local changes**, so basically all your work will be gone, you can do `git reset --hard` when you just want the changes in the repository and don't want your local changes. Or instead of reset you can do `git checkout <file>` which will disregard local changes but before doing that make sure that file is not staged via `git reset HEAD <file>`, this command will remove that file from your staging area.
 
 ----- 
 
@@ -212,7 +212,7 @@ Third way is to `stash` your changes, so basically this will save your uncommite
     /assets/images/mergeconflict.png 600w,
     /assets/images/mergeconflict.png 900w">
 
-Then you have to click *compare*, add the changes, and commit/push. Usually `git stash` is used when you want to hide your changes but don't want to commit, if you actually want to commit then it's better to just use the first way specified in this article. Also in `git stash` you can either `pop` or `apply`. `git stash pop` will throw away the stash after applying it, whereas `git stash apply` leaves it in the stash list for possible later reuse.
+Then you have to click *compare*, add the changes, and commit/push. Usually `git stash` is used when you want to hide your changes but don't want to commit, if you actually want to commit then it's better to just use the first way specified in this article. Also in `git stash` you can either `pop` or `apply`. `git stash pop` will throw away the stash after applying it, whereas `git stash apply` leaves it in the stash list for possible later reuse. You can also delete the applied stash later by executing `git stash drop`.
 
 
 
