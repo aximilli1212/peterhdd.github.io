@@ -180,6 +180,13 @@ git add <file_name>
 git commit -m "my changes"
 ```
 
+Now my changes are inside the local repository, if I execute:
+
+```
+git merge origin/master ## or git pull origin master
+```
+I will have a merge conflict, I can fix the conflict by opening any IDE like vscode, merging the changes from the repository to my file, keeping my changes and then I can do `git push origin master`
+
 
 
 ## Recommended Books
